@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "币风",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ff9f00",
+    "backgroundColor": "#eaeaea",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/img/home.png",
+        "selectedIconPath": "assets/img/homeFill.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "任务大厅",
+        "iconPath": "assets/img/task.png",
+        "selectedIconPath": "assets/img/taskFill.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "assets/img/user.png",
+        "selectedIconPath": "assets/img/userFill.png"
+      }
+    ]
+  }
+}

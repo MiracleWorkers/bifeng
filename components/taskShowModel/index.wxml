@@ -1,0 +1,31 @@
+<view class='task-show-model'>
+  <view class="task-top">
+    <view class="left">
+      <image src="../../assets/img/aver.jpeg" />
+      <text class='user-name'>李某某</text>
+    </view>
+    <view class="right">
+      <text>分享一次 +150CSS</text>
+      <text>赏金剩余75%</text>
+    </view>
+  </view>
+  <view class='thumb'>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' />
+    <view class='thumb-title'>
+      <text>EOS超级节点再创币圈神话神</text>
+    </view>
+     <view class='toTop'>置顶</view>
+     <view class='best'>精品</view>  
+  </view>
+  <view class='task-tags'>
+    <view class='tags'>
+      <view class='tag'>EOS</view>
+      <view class='tag'>柚子</view>
+      <view class='tag'>ETH</view>
+    </view>
+    <view class='kind'>
+      任务分类: 
+      <text>新币上线</text>
+    </view>
+  </view>
+</view>

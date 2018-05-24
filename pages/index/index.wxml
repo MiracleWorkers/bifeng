@@ -1,0 +1,96 @@
+<view class="container">
+  <!-- 轮播图  -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-indicator-color='#e6e6e6' indicator-active-color='#ff9f00'>
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 任务列表 -->
+  <view class="taskList">
+    <view class="taskContent" wx:for="{{taskList}}" wx:key="title">
+      <view class="icon"></view>
+      <text class="text">{{item.title}}</text>
+    </view>
+  </view>
+
+  <!-- 通知模块 -->
+  <view class='notification-box'>
+    <image class='avater' src="../../assets/img/aver.jpeg"></image>
+    <view class='notification-text'>
+      <view class='noti-info'>
+        <text>李某某</text>
+        <text>刚刚发布了注册任务:</text>
+      </view>
+      <view class='noti-title'>LS区块链媒体平台注册赢好礼扩散到附近上课地方就</view>
+    </view>
+  </view>
+
+  <!-- 抢任务 -->
+  <view class='task-contest'>
+    <view class='state'>
+      <view class='state-left'>
+        <text class='title'>抢任务</text>
+        <text class="smallTitle">所有任务中，单位工作量下酬劳最高的任务</text>
+      </view>
+      <view class='state-right'>
+        34小时36分23秒
+      </view>
+    </view>
+  </view>
+  <include src="../../components/taskShowModel/index.wxml" />
+
+  <!-- 专题 -->
+  <view class='topics'>
+    <view class='title'>
+      <text>专题</text>
+    </view>
+    <view class='contentBox'>
+      <view class='module' wx:for="{{topicsList}}" wx:key="title">
+        <view class='icon'></view>
+        <text class='text'>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 精品任务  -->
+  <view class="taskBest">
+    <view class='top'>
+      <text>精品任务</text>
+    </view>
+    <view class='task-model'>
+      <image src="../../assets/img/aver.jpeg" />
+      <view class='model-info'>
+        <view class='info-title'>
+          <text class='mark'>置顶</text>
+          <text class="mark best">精品</text> EOS超级节点再创币圈神话超级节点再创币
+        </view>
+        <view class='tags'>
+          <view class='left'>
+            <text>EOS</text>
+            <text>柚子</text>
+            <text>ETH</text>
+          </view>
+          <view class='right'>
+            每成功邀请1人注册 +1000CSS
+          </view>
+        </view>
+        <view class='sort'>
+          <view class='left'>
+            任务分类: 涨粉任务
+          </view>
+          <view class='right'>
+            赏金剩余75%
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 底线 -->
+  <view class='bottomLine'>
+    我是有底线的
+  </view>
+</view>

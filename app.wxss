@@ -1,0 +1,11 @@
+/**app.wxss**/
+page{
+  min-height: 100%;
+  background-color: #f7f7f7;
+}
+
+.container {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: "antialiased";
+  color: #2c2c2c;
+} 
