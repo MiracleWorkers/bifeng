@@ -1,7 +1,11 @@
 @import "../../assets/base.scss";
 .task-show-model {
   height: auto;
+  margin-top: 20rpx;
   background: #fff;
+  &:first-child{
+    margin-top: 0;
+  }
   .task-top {
     display: flex;
     align-items: center;

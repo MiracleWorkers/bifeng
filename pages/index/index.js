@@ -37,28 +37,22 @@ Page({
       }
     ],
     topicsList: [{
-      title: "新币专区",
+      title: "优质专选",
       imgSrc: "",
-      path: "/index"
+      path: "../topics/topics?module=A"
     }, {
-      title: "技术周报",
+      title: "趣味专题",
       imgSrc: "",
-      path: "/index"
+      path: "../topics/topics?module=B"
     }, {
-      title: "热门活动",
+      title: "酬劳丰厚",
       imgSrc: "",
-      path: "/index"
+      path: "../topics/topics?module=C"
     }, {
-      title: "项目公告",
+      title: "机会多多",
       imgSrc: "",
-      path: "/index"
+      path: "../topics/topics?module=D"
     }]
-  },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -88,8 +82,22 @@ Page({
       })
     }
   },
+  onPullDownRefresh:function(){
+    console.log("监听到上拉了")
+  },
+  // 页面上拉触底回调函数
+  onReachBottom:function(){
+    console.log("监听到下拉触底了")
+  },
+
+  // 专题页跳转
+  _blankTopics(e){
+    const {path,title} = e.currentTarget.dataset.item;
+    wx.navigateTo({url: path})
+  },
+
+  // 获取用户信息
   getUserInfo: function (e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

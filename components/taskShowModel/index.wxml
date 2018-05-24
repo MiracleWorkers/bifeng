@@ -1,4 +1,5 @@
-<view class='task-show-model'>
+<view>
+  <view class='task-show-model'>
   <view class="task-top">
     <view class="left">
       <image src="../../assets/img/aver.jpeg" />
@@ -28,4 +29,5 @@
       <text>新币上线</text>
     </view>
   </view>
+</view>
 </view>

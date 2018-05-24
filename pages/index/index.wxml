@@ -1,6 +1,12 @@
 <view class="container">
   <!-- 轮播图  -->
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-indicator-color='#e6e6e6' indicator-active-color='#ff9f00'>
+  <swiper 
+    indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}" 
+    indicator-color='#fff' 
+    indicator-active-color='#E27B10'>
     <block wx:for="{{imgUrls}}" wx:key="*this">
       <swiper-item>
         <image src="{{item}}" class="slide-image" />
@@ -48,7 +54,12 @@
       <text>专题</text>
     </view>
     <view class='contentBox'>
-      <view class='module' wx:for="{{topicsList}}" wx:key="title">
+      <view 
+        class='module' 
+        wx:for="{{topicsList}}" 
+        wx:key="title"
+        data-item="{{item}}"
+        bindtap="_blankTopics">
         <view class='icon'></view>
         <text class='text'>{{item.title}}</text>
       </view>

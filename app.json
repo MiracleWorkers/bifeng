@@ -1,19 +1,18 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/topics/topics"
   ],
   "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#E27B10",
     "navigationBarTitleText": "币风",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
     "color": "#8a8a8a",
-    "selectedColor": "#ff9f00",
-    "backgroundColor": "#eaeaea",
+    "selectedColor": "#E27B10",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",

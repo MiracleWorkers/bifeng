@@ -104,7 +104,10 @@
 
 .task-show-model {
   height: auto;
+  margin-top: 20rpx;
   background: #fff; }
+  .task-show-model:first-child {
+    margin-top: 0; }
   .task-show-model .task-top {
     display: flex;
     align-items: center;
