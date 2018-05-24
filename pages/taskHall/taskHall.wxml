@@ -1,0 +1,33 @@
+<view>
+  <!-- 顶部按钮 -->
+  <view class="linkButtons">
+    <view 
+      class="button"
+      wx:for="{{topButtonList}}"
+      wx:key="name">
+      <view class="icon"></view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 搜索框 -->
+  <view class="searchBox">
+    <view class="input">
+      <view class="icon">
+        <icon type="search" size="16" color="#bfbfbf" />
+      </view>
+      <view class="placeholder">
+        输入关键词，查找感兴趣的任务
+      </view>
+    </view>
+  </view>
+  <!-- 筛选框 -->
+  <view class="selectBar">
+    <view class="model">
+      <text>全部选择</text>
+      <image mode="widthFix" src="../../assets/img/turn.png" />
+    </view>
+    <view class="model">全部分类</view>
+    <view class="model">赏金剩余做少</view>
+  </view>
+  <!-- 展示内容 -->
+</view>

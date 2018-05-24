@@ -1,0 +1,86 @@
+@import "../../assets/base.scss";
+
+// 顶部按钮组
+.linkButtons {
+  display: flex;
+  width: 750rpx;
+  height: 90rpx;
+  border-bottom: 1rpx solid $borderColor;
+  background-color: #fff;
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: inherit;
+    border-right: 1rpx solid $borderColor;
+    &:last-child {
+      border-right: 0;
+    }
+    &:active{
+      background-color: #e4e2e2;
+    }
+
+    .icon{
+      width: 60rpx;
+      height: 60rpx;
+      background: #f5f5f5;
+    }
+    text{
+      font-size: $subTitleSize;
+      margin-left: 12rpx;
+    }
+  }
+}
+
+// 搜索框
+.searchBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  .input{
+    display: flex;
+    align-items: center;
+    width: 580rpx;
+    height: 48rpx;
+    border-radius: 48rpx;
+    border: 2rpx solid $borderColor;
+    font-size: 22rpx;
+    color: #999;
+    .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70rpx;
+      height: 100%;
+    }
+  }
+}
+
+// 筛选框
+.selectBar{
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 80rpx;
+  background-color: #fff;
+  .model{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 28%;
+    height: 60rpx;
+    font-size: 24rpx;
+    border-right: 1rpx solid $borderColor;
+    image{
+      display: inline-block;
+      width: 22rpx;
+      
+    }
+  }
+}

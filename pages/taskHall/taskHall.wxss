@@ -1,0 +1,72 @@
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.linkButtons {
+  display: flex;
+  width: 750rpx;
+  height: 90rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  background-color: #fff; }
+  .linkButtons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: inherit;
+    border-right: 1rpx solid #e6e6e6; }
+    .linkButtons .button:last-child {
+      border-right: 0; }
+    .linkButtons .button:active {
+      background-color: #e4e2e2; }
+    .linkButtons .button .icon {
+      width: 60rpx;
+      height: 60rpx;
+      background: #f5f5f5; }
+    .linkButtons .button text {
+      font-size: 28rpx;
+      margin-left: 12rpx; }
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  background: #fff; }
+  .searchBox .input {
+    display: flex;
+    align-items: center;
+    width: 580rpx;
+    height: 48rpx;
+    border-radius: 48rpx;
+    border: 2rpx solid #e6e6e6;
+    font-size: 22rpx;
+    color: #999; }
+    .searchBox .input .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70rpx;
+      height: 100%; }
+
+.selectBar {
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 80rpx;
+  background-color: #fff; }
+  .selectBar .model {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 28%;
+    height: 60rpx;
+    font-size: 24rpx;
+    border-right: 1rpx solid #e6e6e6; }
+    .selectBar .model image {
+      display: inline-block;
+      width: 22rpx; }

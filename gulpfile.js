@@ -1,5 +1,4 @@
 const path = require("path");
-const fs = require("fs");
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const rename = require("gulp-rename");
@@ -11,9 +10,9 @@ const changed = require("gulp-changed");
  *******************/
 
 var config = {
-  pages: './pages',
-  components: './components',
-  assets: './assets'
+  pages: path.resolve(__dirname, "pages"),
+  components: path.resolve(__dirname, "components"),
+  assets: path.resolve(__dirname, "assets")
 };
 
 /*******************

@@ -34,13 +34,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
-					"id": 0,
-					"name": "专题页",
-					"pathName": "pages/topics/topics",
-					"query": "module=A"
+					"id": -1,
+					"name": "任务大厅",
+					"pathName": "pages/taskHall/taskHall",
+					"query": ""
 				}
 			]
 		}

@@ -1,7 +1,9 @@
 <!--pages/topics.wxml-->
 <view>
   <!--头图-->
-  <view class="topImage"></view>
+  <view class="topImage">
+    <image mode="widthFix" src="../../assets/img/weChat1.jpg" />
+  </view>
   <!--任务列表-->
   <include src="../../components/taskShowModel/index.wxml" />
   <!--底线-->
