@@ -1,3 +1,4 @@
+@import "../../assets/base.scss";
 .task-show-model {
   height: auto;
   background: #fff;
@@ -6,7 +7,7 @@
     align-items: center;
     width: 100%;
     padding: 10rpx 0;
-    color: #515151;
+    color: $subTitleColor;
     text {
       display: block;
     }
@@ -22,7 +23,7 @@
         border-radius: 50%;
       }
       .user-name {
-        color: #2c2c2c;
+        color: $titleColor;
         font-size: 28rpx;
         margin-left: 20rpx;
       }
@@ -72,7 +73,7 @@
       background: #f7f7f7;
       transform: rotate(-45deg);
       border-top: 1px solid e6e6e6;
-      border-bottom: 1px solid #e6e6e6;
+      border-bottom: 1px solid $borderColor;
     }
     .best {
       position: absolute;
@@ -84,10 +85,10 @@
       font-size: 22rpx;
       text-align: center;
       background: #f7f7f7;
-      color: #ff9f00;
+      color: $themeColor;
       transform: rotate(-45deg);
       border-top: 1px solid e6e6e6;
-      border-bottom: 1px solid #e6e6e6;
+      border-bottom: 1px solid $borderColor;
     }
   }
 

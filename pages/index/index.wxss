@@ -91,6 +91,17 @@
       font-size: 28rpx;
       color: #515151; }
 
+/*
+ * 颜色定制
+ */
+/*
+ * 大小定制
+ */
+.singleLine, .notification-box .notification-text .noti-title, .taskBest .task-model .model-info .info-title, .taskBest .task-model .model-info .tags .left {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .task-show-model {
   height: auto;
   background: #fff; }
@@ -167,7 +178,7 @@
       font-size: 22rpx;
       text-align: center;
       background: #f7f7f7;
-      color: #ff9f00;
+      color: #E27B10;
       transform: rotate(-45deg);
       border-top: 1px solid e6e6e6;
       border-bottom: 1px solid #e6e6e6; }
@@ -278,6 +289,9 @@
           vertical-align: bottom;
           margin-left: 8rpx;
           font-size: 22rpx; }
+        .taskBest .task-model .model-info .info-title .best {
+          border: 1rpx solid #E27B10;
+          color: #E27B10; }
       .taskBest .task-model .model-info .tags {
         display: flex;
         align-items: center;

@@ -11,7 +11,9 @@ const changed = require("gulp-changed");
  *******************/
 
 var config = {
-  src: './pages'
+  pages: './pages',
+  components: './components',
+  assets: './assets'
 };
 
 /*******************
@@ -20,12 +22,12 @@ var config = {
 
 // sass 处理
 gulp.task('scss', function () {
-return gulp.src(config.src + '/**/*.scss')
+return gulp.src(config.pages + '/**/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(rename(function(path){
       path.extname = '.wxss';
   }))
-  .pipe(gulp.dest(config.src))
+  .pipe(gulp.dest(config.pages))
   .on('end', function() {
       console.log('[完成] sass 编译完毕');
   });
@@ -33,22 +35,13 @@ return gulp.src(config.src + '/**/*.scss')
 
 //监视
 gulp.task('watch', function(event) {
-  gulp.watch(config.src+ '/**/*.scss', ['scss']);
+  gulp.watch(config.pages+ '/**/*.scss', ['scss']);
+  gulp.watch(config.components+ '/**/*.scss', ['scss']);
+  gulp.watch(config.assets+ '/**/*.scss', ['scss']);
 });
 
 //开发
 gulp.task('dev', ['watch', 'scss']);
-
-
-
-//帮助
-gulp.task('help', function() {
-  console.log('----------- gulp命令 -----------');
-  console.log('gulp               命令清单');
-  console.log('----------- 开发环境 -----------');
-  console.log('gulp dev           开发模式');
-
-});
 
 
 //默认任务
