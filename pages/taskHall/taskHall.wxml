@@ -24,14 +24,28 @@
       <view 
         class="model {{item.isOpen?'active':''}}" 
         wx:for="{{selectBar}}" 
-        wx:key="*this" 
+        wx:key="{{index}}" 
         data-key="{{index}}" 
         bindtap="selectModel">
         <text>{{item.value}}</text>
         <image mode="widthFix" src="../../assets/img/turn.png" />
       </view>
-      <view class='showSelectBox'>
-        
+      <view 
+        class='showSelectBox' 
+        wx:for="{{selectBar}}" 
+        wx:key="{{index}}"
+        wx:if="{{item.isOpen}}">
+        <view 
+          wx:for="{{item.itemList}}"
+          wx:for-index="childIndex"
+          wx:for-item="childItem"
+          wx:key="childItem"
+          bindtap='selectModelItem'
+          data-content="{{childItem}}"
+          data-parentKey="{{index}}"
+          class="item {{item.value===childItem?'isActive':''}}">
+            {{childItem}}
+        </view>
       </view>
     </view>
   </view>

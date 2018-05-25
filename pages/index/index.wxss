@@ -148,7 +148,7 @@
   margin-bottom: 20rpx;
   background: #fff; }
   .task-show-model:active {
-    background-color: #f5f5f5; }
+    background-color: #eeeeee; }
   .task-show-model .task-top {
     display: flex;
     align-items: center;

@@ -114,23 +114,37 @@
         display: inline-block;
         width: 22rpx;
         margin-right: 12rpx;
-        margin-left: 8rpx;
-        transition: transform 400ms; }
+        margin-left: 8rpx; }
       .stateBox .selectBar .model:nth-child(1), .stateBox .selectBar .model:nth-child(2) {
         width: 25%; }
     .stateBox .selectBar .showSelectBox {
       position: absolute;
       width: 750rpx;
-      height: 500rpx;
+      height: auto;
       left: 0;
       top: 100%;
       background: #fff;
       z-index: 3; }
+      .stateBox .selectBar .showSelectBox .item {
+        width: 100%;
+        padding-left: 40rpx;
+        height: 74rpx;
+        line-height: 74rpx;
+        font-size: 28rpx;
+        color: #515151;
+        border-top: 1rpx solid #e6e6e6; }
+        .stateBox .selectBar .showSelectBox .item:active {
+          background-color: #f5f5f5; }
+        .stateBox .selectBar .showSelectBox .item:last-child {
+          border-bottom: 1px solid #e6e6e6; }
+      .stateBox .selectBar .showSelectBox .isActive {
+        color: #e27b10; }
     .stateBox .selectBar .active > image {
       transform: rotate(-180deg); }
 
 .showContentBox {
-  margin-top: 260rpx; }
+  padding-top: 260rpx;
+  background: #f5f5f5; }
   .showContentBox .singleLine {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -165,7 +179,7 @@
     margin-bottom: 20rpx;
     background: #fff; }
     .showContentBox .task-show-model:active {
-      background-color: #f5f5f5; }
+      background-color: #eeeeee; }
     .showContentBox .task-show-model .task-top {
       display: flex;
       align-items: center;
