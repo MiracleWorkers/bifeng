@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/topics/topics",
-    "pages/taskHall/taskHall"
+    "pages/taskHall/taskHall",
+    "pages/user/user"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",
@@ -29,7 +29,7 @@
         "selectedIconPath": "assets/img/taskFill.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/user/user",
         "text": "我的",
         "iconPath": "assets/img/user.png",
         "selectedIconPath": "assets/img/userFill.png"
