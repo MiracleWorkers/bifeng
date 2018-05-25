@@ -1,33 +1,47 @@
-<view>
-  <!-- 顶部按钮 -->
-  <view class="linkButtons">
-    <view 
-      class="button"
-      wx:for="{{topButtonList}}"
-      wx:key="name">
-      <view class="icon"></view>
-      <text>{{item.name}}</text>
-    </view>
-  </view>
-  <!-- 搜索框 -->
-  <view class="searchBox">
-    <view class="input">
-      <view class="icon">
-        <icon type="search" size="16" color="#bfbfbf" />
-      </view>
-      <view class="placeholder">
-        输入关键词，查找感兴趣的任务
+<view class='container'>
+  <view class='maskbox' wx:if='{{FLAG_MASK}}' catchtouchstart="noAllow"></view>
+  <view class="stateBox">
+    <!-- 顶部按钮 -->
+    <view class="linkButtons">
+      <view class="button" wx:for="{{topButtonList}}" wx:key="name">
+        <view class="icon"></view>
+        <text>{{item.name}}</text>
       </view>
     </view>
-  </view>
-  <!-- 筛选框 -->
-  <view class="selectBar">
-    <view class="model">
-      <text>全部选择</text>
-      <image mode="widthFix" src="../../assets/img/turn.png" />
+    <!-- 搜索框 -->
+    <view class="searchBox">
+      <view class="input">
+        <view class="icon">
+          <icon type="search" size="12" color="#bfbfbf" />
+        </view>
+        <view class="placeholder">
+          输入关键词，查找感兴趣的任务
+        </view>
+      </view>
     </view>
-    <view class="model">全部分类</view>
-    <view class="model">赏金剩余做少</view>
+    <!-- 筛选框 -->
+    <view class="selectBar">
+      <view 
+        class="model {{item.isOpen?'active':''}}" 
+        wx:for="{{selectBar}}" 
+        wx:key="*this" 
+        data-key="{{index}}" 
+        bindtap="selectModel">
+        <text>{{item.value}}</text>
+        <image mode="widthFix" src="../../assets/img/turn.png" />
+      </view>
+      <view class='showSelectBox'>
+        
+      </view>
+    </view>
   </view>
+
   <!-- 展示内容 -->
+  <view class='showContentBox'>
+    <include src="../../components/taskShowModel/index.wxml" />
+    <include src="../../components/taskShowModel/index.wxml" />
+
+    <!-- 底线 -->
+    <view class="bottomLine">我是有底线的</view>
+  </view>
 </view>

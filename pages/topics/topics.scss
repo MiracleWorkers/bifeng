@@ -14,29 +14,6 @@
 
 // 底线
 .bottomLine {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 750rpx;
-  height: 200rpx;
-  font-size: 24rpx;
-  color: #515151;
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 200rpx;
-    height: 2rpx;
-    margin-right: 8rpx;
-    background: $borderColor;
-    vertical-align: middle;
-  }
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 200rpx;
-    height: 2rpx;
-    margin-left: 8rpx;
-    background: $borderColor;
-    vertical-align: middle;
-  }
+  @extend .bottomLineModel;
+  background: transparent;
 }

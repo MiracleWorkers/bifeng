@@ -3,6 +3,32 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+.bottomLineModel, .bottomLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before, .bottomLine::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after, .bottomLine::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
 .slide-image {
   width: 750rpx; }
 
@@ -91,12 +117,38 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+.bottomLineModel, .bottomLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before, .bottomLine::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after, .bottomLine::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
 .task-show-model {
   height: auto;
-  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   background: #fff; }
-  .task-show-model:first-child {
-    margin-top: 0; }
+  .task-show-model:active {
+    background-color: #f5f5f5; }
   .task-show-model .task-top {
     display: flex;
     align-items: center;
@@ -170,7 +222,7 @@
       font-size: 22rpx;
       text-align: center;
       background: #f7f7f7;
-      color: #E27B10;
+      color: #e27b10;
       transform: rotate(-45deg);
       border-top: 1px solid e6e6e6;
       border-bottom: 1px solid #e6e6e6; }
@@ -286,8 +338,8 @@
           margin-left: 8rpx;
           font-size: 22rpx; }
         .taskBest .task-model .model-info .info-title .best {
-          border: 1rpx solid #E27B10;
-          color: #E27B10; }
+          border: 1rpx solid #e27b10;
+          color: #e27b10; }
       .taskBest .task-model .model-info .tags {
         display: flex;
         align-items: center;
@@ -319,29 +371,3 @@
         .taskBest .task-model .model-info .sort .right {
           width: 50%;
           text-align: right; }
-
-.bottomLine {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 750rpx;
-  height: 200rpx;
-  background: #fff;
-  font-size: 24rpx;
-  color: #515151; }
-  .bottomLine::before {
-    content: "";
-    display: inline-block;
-    width: 200rpx;
-    height: 2rpx;
-    margin-right: 8rpx;
-    background: #e6e6e6;
-    vertical-align: middle; }
-  .bottomLine::after {
-    content: "";
-    display: inline-block;
-    width: 200rpx;
-    height: 2rpx;
-    margin-left: 8rpx;
-    background: #e6e6e6;
-    vertical-align: middle; }
