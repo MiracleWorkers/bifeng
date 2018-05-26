@@ -5,6 +5,7 @@ page{
 }
 
 .container {
+  min-height: 100%;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: "antialiased";
   color: #2c2c2c;

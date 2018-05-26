@@ -1,1 +1,76 @@
-/* pages/user/user.wxss */
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel, .initPage .infoText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before, .initPage .infoText::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after, .initPage .infoText::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.container {
+  background: #fff; }
+
+.initPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .initPage .infoText {
+    color: #e27b10;
+    font-size: 36rpx; }
+    .initPage .infoText:before {
+      width: 100rpx;
+      margin-right: 30rpx;
+      background-color: #f5f5f5; }
+    .initPage .infoText:after {
+      width: 100rpx;
+      margin-left: 30rpx;
+      background-color: #f5f5f5; }
+  .initPage .model {
+    height: auto;
+    width: 540rpx;
+    margin-bottom: 80rpx;
+    padding-bottom: 30rpx;
+    border: 1rpx solid #e6e6e6; }
+    .initPage .model .button {
+      display: flex;
+      align-items: center;
+      height: 110rpx;
+      background: #f5f5f5; }
+      .initPage .model .button .icon {
+        width: 80rpx;
+        height: 80rpx;
+        margin-left: 40rpx;
+        background: #fff; }
+      .initPage .model .button text {
+        color: #515151;
+        font-size: 34rpx;
+        margin-left: 20rpx;
+        font-weight: 600; }
+    .initPage .model .title {
+      margin-top: 10rpx;
+      font-size: 28rpx;
+      color: #515151;
+      text-align: center; }

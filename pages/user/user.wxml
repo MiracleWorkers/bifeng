@@ -1,2 +1,29 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- 第一次进入 -->
+<view class="container initPage" wx:if="{{userPage==='init'}}">
+  <text class='infoText'>请选择角色</text>
+  <view class='model'>
+    <view class='button'>
+      <view class='icon'></view>
+      <text>我是雇主</text>
+    </view>
+    <view class='title'>雇主可以在币风平台发布众包任务</view>
+  </view>
+  <view class='model'>
+    <view class='button'>
+      <view class='icon'></view>
+      <text>我是服务商</text>
+    </view>
+    <view class='title'>服务商可以在币风平台执行众包任务</view>
+  </view>
+</view>
+
+<!-- 选择雇主 -->
+<view class='container providerPage' wx:if="{{userPage==='provider'}}">
+  2
+</view>
+
+<!-- 选择服务商 -->
+
+<view class='container masterPage' wx:if="{{userPage==='master'}}">
+  3
+</view>
