@@ -1,0 +1,56 @@
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.container {
+  padding-top: 20rpx; }
+  .container .inputbox {
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    height: 90rpx;
+    background-color: #fff; }
+    .container .inputbox input {
+      display: block;
+      width: 640rpx;
+      height: 90rpx;
+      padding-left: 30rpx;
+      font-size: 34rpx;
+      color: #2c2c2c; }
+    .container .inputbox .placeClass {
+      font-size: 28rpx;
+      color: #e6e6e6; }
+  .container .textNum {
+    display: block;
+    width: 720rpx;
+    margin-top: 20rpx;
+    text-align: right;
+    font-size: 22rpx;
+    color: #bfbfbf; }

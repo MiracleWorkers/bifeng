@@ -1,0 +1,63 @@
+@import "../../assets/base.scss";
+
+.panel {
+  width: 750rpx;
+  height: auto;
+  padding: 20rpx 0;
+  background-color: #fff;
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 140rpx;
+
+    .text {
+      font-size: $titleSize;
+      color: $titleColor;
+      margin-left: 20rpx;
+    }
+
+    .value {
+      font-size: 38rpx;
+      font-weight: 600;
+      margin-left: 20rpx;
+    }
+  }
+
+  .info {
+    margin-top: 40rpx;
+
+    .model {
+      width: 730rpx;
+
+      .model-title {
+        display: flex;
+        align-items: center;
+        font-size: $titleSize;
+        color: $titleColor;
+        margin-bottom: 10rpx;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 6rpx;
+          height: 30rpx;
+          background-color: $themeColor;
+          margin-right: 12rpx;
+        }
+      }
+
+      .model-text {
+        font-size: $subTitleSize;
+        color: $infoColor;
+        margin-top: 6rpx;
+        margin-left: 20rpx;
+
+        text {
+          color: $themeColor;
+        }
+      }
+    }
+  }
+}

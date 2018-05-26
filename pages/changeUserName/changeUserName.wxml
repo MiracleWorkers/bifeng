@@ -1,0 +1,21 @@
+<view class="container">
+  <view class='inputbox'>
+    <input 
+      placeholder='{{placeholder}}'
+      placeholder-class='placeClass'
+      maxlength='10'
+      value="{{userName}}"
+      bindinput='bindInput'
+      focus='true'
+       />
+    <icon 
+      wx:if='{{userName.length>0}}'
+      bindtap='clearInput'
+      type='clear' 
+      color='#e6e6e6' 
+      size='20'>
+      </icon>
+  </view>
+  <text class='textNum'>还可以输入{{10-userName.length<0?0:10-userName.length}}个字</text>
+</view>
+

@@ -29,25 +29,23 @@
     background: #e6e6e6;
     vertical-align: middle; }
 
-.container {
-  background: #fff; }
-
 .initPage {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #fff; }
   .initPage .infoText {
     color: #e27b10;
     font-size: 36rpx; }
     .initPage .infoText:before {
       width: 100rpx;
       margin-right: 30rpx;
-      background-color: #f5f5f5; }
+      background-color: #e27b10; }
     .initPage .infoText:after {
       width: 100rpx;
       margin-left: 30rpx;
-      background-color: #f5f5f5; }
+      background-color: #e27b10; }
   .initPage .model {
     height: auto;
     width: 540rpx;
@@ -74,3 +72,92 @@
       font-size: 28rpx;
       color: #515151;
       text-align: center; }
+
+.providerPage, .masterPage {
+  background-color: #f5f5f5;
+  padding-bottom: 120rpx; }
+  .providerPage .one, .masterPage .one {
+    background-color: #fff; }
+  .providerPage .two, .masterPage .two {
+    background-color: #fff;
+    margin-top: 30rpx; }
+  .providerPage .three, .masterPage .three {
+    background-color: #fff;
+    margin-top: 20rpx; }
+  .providerPage .four, .masterPage .four {
+    background-color: #fff;
+    margin-top: 60rpx; }
+  .providerPage .module, .masterPage .module {
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    height: 90rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+    font-size: 34rpx;
+    color: #bfbfbf; }
+    .providerPage .module:last-child, .masterPage .module:last-child {
+      border-bottom: 0; }
+    .providerPage .module:active, .masterPage .module:active {
+      background-color: #e6e6e6; }
+    .providerPage .module .title, .masterPage .module .title {
+      width: 50%;
+      padding-left: 30rpx;
+      color: #2c2c2c; }
+    .providerPage .module .value-text, .masterPage .module .value-text, .providerPage .module .value-img, .masterPage .module .value-img, .providerPage .module .value-turn, .masterPage .module .value-turn {
+      width: 50%;
+      padding-right: 30rpx;
+      text-align: right; }
+    .providerPage .module .value-img, .masterPage .module .value-img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .providerPage .module .value-img image, .masterPage .module .value-img image {
+        display: inline-block;
+        width: 70rpx; }
+    .providerPage .module .value-turn, .masterPage .module .value-turn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .providerPage .module .value-turn image, .masterPage .module .value-turn image {
+        width: 30rpx;
+        margin-left: 16rpx; }
+  .providerPage .module-signIn, .masterPage .module-signIn {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1rpx solid #e6e6e6; }
+    .providerPage .module-signIn:last-child, .masterPage .module-signIn:last-child {
+      border-bottom: 0; }
+    .providerPage .module-signIn .title, .masterPage .module-signIn .title {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      padding-left: 30rpx;
+      font-size: 34rpx;
+      color: #2c2c2c; }
+      .providerPage .module-signIn .title text, .masterPage .module-signIn .title text {
+        font-weight: 600; }
+      .providerPage .module-signIn .title .info, .masterPage .module-signIn .title .info {
+        font-weight: normal;
+        font-size: 22rpx;
+        color: #bfbfbf; }
+      .providerPage .module-signIn .title .small, .masterPage .module-signIn .title .small {
+        font-size: 20rpx; }
+    .providerPage .module-signIn .button-box, .masterPage .module-signIn .button-box {
+      width: 25%;
+      padding-right: 30rpx;
+      text-align: right; }
+      .providerPage .module-signIn .button-box .button, .masterPage .module-signIn .button-box .button {
+        display: inline-block;
+        text-align: center;
+        width: 130rpx;
+        height: 50rpx;
+        line-height: 50rpx;
+        background-color: #e27b10;
+        color: #fff;
+        font-size: 28rpx; }
+      .providerPage .module-signIn .button-box .disable, .masterPage .module-signIn .button-box .disable {
+        background-color: #fff;
+        border: 1rpx solid #e6e6e6;
+        color: #e6e6e6; }

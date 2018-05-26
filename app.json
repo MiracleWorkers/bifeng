@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/topics/topics",
     "pages/taskHall/taskHall",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/changeUserName/changeUserName",
+    "pages/cssInfo/cssInfo",
+    "pages/aboutUs/aboutUs",
+    "pages/agreement/agreement"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

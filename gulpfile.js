@@ -34,13 +34,13 @@ return gulp.src(config.pages + '/**/*.scss')
 
 //监视
 gulp.task('watch', function(event) {
-  gulp.watch(config.pages+ '/**/*.scss', ['scss']);
-  gulp.watch(config.components+ '/**/*.scss', ['scss']);
-  gulp.watch(config.assets+ '/**/*.scss', ['scss']);
+  gulp.watch('./pages/**/*.scss', ['scss']);
+  gulp.watch('./components/**/*.scss', ['scss']);
+  gulp.watch('./assets/**/*.scss', ['scss']);
 });
 
 //开发
-gulp.task('dev', ['watch', 'scss']);
+gulp.task('dev', ['scss','watch']);
 
 
 //默认任务

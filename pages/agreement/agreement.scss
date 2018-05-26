@@ -1,0 +1,20 @@
+@import "../../assets/base.scss";
+
+.agreement-box{
+  width: 690rpx;
+  height: auto;
+  padding: 60rpx 30rpx 30rpx;
+  background-color: #fff;
+  .title{
+    text-align: center;
+    font-size: $titleSize;
+    color: $titleColor;
+    font-weight: 600;
+  }
+  .info{
+    font-size: $subTitleSize;
+    color: $subTitleColor;
+    text-indent: 2em;
+    margin-top: 40rpx;
+  }
+}

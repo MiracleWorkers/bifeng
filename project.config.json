@@ -47,6 +47,30 @@
 					"name": "个人中心",
 					"pathName": "pages/user/user",
 					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "修改雇主名或服务商名",
+					"pathName": "pages/changeUserName/changeUserName",
+					"query": "module=provider"
+				},
+				{
+					"id": -1,
+					"name": "积分介绍",
+					"pathName": "pages/cssInfo/cssInfo",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "关于币风",
+					"pathName": "pages/aboutUs/aboutUs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户协议",
+					"pathName": "pages/agreement/agreement",
+					"query": ""
 				}
 			]
 		}

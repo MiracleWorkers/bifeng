@@ -1,0 +1,32 @@
+@import "../../assets/base.scss";
+
+.container{
+  padding-top: 20rpx;
+  .inputbox{
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    height: 90rpx;
+    background-color: #fff;
+    input{
+      display: block;
+      width: 640rpx;
+      height: 90rpx;
+      padding-left: 30rpx;
+      font-size: $titleSize;
+      color: $titleColor;
+    }
+    .placeClass{
+      font-size: 28rpx;
+      color: #e6e6e6;
+    }
+  }
+  .textNum{
+    display: block;
+    width: 720rpx;
+    margin-top: 20rpx;
+    text-align: right;
+    font-size: $infoSize;
+    color: $infoColor;
+  }
+}

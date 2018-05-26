@@ -1,55 +1,59 @@
 @import '../../assets/base.scss';
-
-.container{
-  background: #fff;
-}
-
 // 首页进入
-.initPage{
+.initPage {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  .infoText{
+  background-color: #fff;
+
+  .infoText {
     @extend .bottomLineModel;
     color: $themeColor;
     font-size: 36rpx;
-    &:before{
+
+    &:before {
       width: 100rpx;
       margin-right: 30rpx;
-      background-color: #f5f5f5;
+      background-color: $themeColor;
     }
-    &:after{
+
+    &:after {
       width: 100rpx;
       margin-left: 30rpx;
-      background-color: #f5f5f5;
+      background-color: $themeColor;
     }
   }
-  .model{
+
+  .model {
     height: auto;
     width: 540rpx;
     margin-bottom: 80rpx;
     padding-bottom: 30rpx;
     border: 1rpx solid $borderColor;
-    .button{
+
+    .button {
       display: flex;
       align-items: center;
       height: 110rpx;
       background: #f5f5f5;
-      .icon{
+
+      .icon {
         width: 80rpx;
         height: 80rpx;
         margin-left: 40rpx;
         background: #fff;
       }
-      text{
+
+      text {
         color: $subTitleColor;
         font-size: 34rpx;
         margin-left: 20rpx;
         font-weight: 600;
       }
     }
-    .title{
+
+    .title {
       margin-top: 10rpx;
       font-size: 28rpx;
       color: $subTitleColor;
@@ -57,13 +61,142 @@
     }
   }
 }
-
 // 雇主页面
-.providerPage{
+.providerPage {
+  background-color: #f5f5f5;
+  padding-bottom: 120rpx;
 
+  .one {
+    background-color: #fff;
+  }
+
+  .two {
+    background-color: #fff;
+    margin-top: 30rpx;
+  }
+
+  .three {
+    background-color: #fff;
+    margin-top: 20rpx;
+  }
+
+  .four {
+    background-color: #fff;
+    margin-top: 60rpx;
+  }
+
+  .module {
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    height: 90rpx;
+    border-bottom: 1rpx solid $borderColor;
+    font-size: $titleSize;
+    color: $infoColor;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:active {
+      background-color: $borderColor;
+    }
+
+    .title {
+      width: 50%;
+      padding-left: 30rpx;
+      color: $titleColor;
+    }
+    // 右侧为文字
+    .value-text {
+      width: 50%;
+      padding-right: 30rpx;
+      text-align: right;
+    }
+    // 右侧为图片
+    .value-img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @extend .value-text;
+
+      image {
+        display: inline-block;
+        width: 70rpx;
+      }
+    }
+    // 右侧为文字 + 箭头
+    .value-turn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @extend .value-text;
+
+      image {
+        width: 30rpx;
+        margin-left: 16rpx;
+      }
+    }
+  }
+  // 签到
+  .module-signIn {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1rpx solid $borderColor;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      padding-left: 30rpx;
+      font-size: $titleSize;
+      color: $titleColor;
+
+      text {
+        font-weight: 600;
+      }
+
+      .info {
+        font-weight: normal;
+        font-size: $infoSize;
+        color: $infoColor;
+      }
+      .small{
+        font-size: 20rpx;
+      }
+    }
+
+    .button-box {
+      width: 25%;
+      padding-right: 30rpx;
+      text-align: right;
+
+      .button {
+        display: inline-block;
+        text-align: center;
+        width: 130rpx;
+        height: 50rpx;
+        line-height: 50rpx;
+        background-color: $themeColor;
+        color: #fff;
+        font-size: $subTitleSize;
+      }
+
+      .disable{
+        background-color: #fff;
+        border: 1rpx solid $borderColor;
+        color: $borderColor;
+      }
+    }
+  }
 }
-
 // 服务商页面
-.masterPage{
-
+.masterPage {
+  @extend .providerPage;
 }

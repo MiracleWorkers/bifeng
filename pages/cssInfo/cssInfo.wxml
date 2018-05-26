@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='panel'>
+    <view class='title'>
+      <text class='text'>当前积分:</text>
+      <text class='value'>10000 CSS</text>
+    </view>
+    <view class='info'>
+      <view class='model'>
+        <view class='model-title'>CSS积分有什么用?</view>
+        <view class='model-text'>1、CSS积分可在币风平台发布众包任务时作为酬劳。</view>
+        <view class='model-text'>2、未来可以兑换token。</view>
+      </view>
+    </view>
+    <view class='info'>
+      <view class='model'>
+        <view class='model-title'>CSS如何获得?</view>
+        <view class='model-text'>1、完成币风平台上的众包任务，雇主验收后您就会得到对应数量的CSS积分。</view>
+        <view class='model-text'>2、您也可以联系币风官方客服，<text>立即充值</text>。</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+@import "../../assets/base.scss";
+
+.logobox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  height: 400rpx;
+  image{
+    width: 180rpx;
+  }
+  text{
+    margin-top: 30rpx;
+    font-size: 36rpx;
+    color: $titleColor;
+  }
+}
+
+.companyInfo{
+  width: 750rpx;
+  padding: 40rpx 0;
+  background-color: #fff;
+  font-size: $subTitleSize;
+  color: $subTitleColor;
+  text{
+    display: block;
+    width: 690rpx;
+    margin: 0 auto;
+    text-indent: 2em;
+  }
+}
