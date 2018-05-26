@@ -39,6 +39,12 @@ Page({
       url: "../agreement/agreement"
     })
   },
+  // 页面跳转 -> 消息中心
+  lookMessageInbox:function(){
+    wx.navigateTo({
+      url: "../messageInbox/messageInbox"
+    })
+  },
   // 签到
   signIn:function(){
     if(this.data.isSignIn) return;

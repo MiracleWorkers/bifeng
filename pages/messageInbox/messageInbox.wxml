@@ -1,0 +1,27 @@
+<view class="container">
+  <view class='messageInbox'>
+    <view 
+      wx:for="{{messageList}}"
+      wx:key="{{item.title}}"
+      bindtap='lookMessageContent'
+      data-item="{{item}}"
+      class='model'>
+      <view class='logo-box'>
+        <image mode='widthFix' src='{{item.image}}' />
+      </view>
+      <view class='info-box'>
+        <view class='up'>
+          <view class='title'>
+            <text class='type'>{{item.type}}</text>
+             <text class='name'>{{item.title}}</text> 
+          </view>
+           <view class='time'>{{item.time}}</view> 
+        </view>
+         <view class='down'>
+          {{item.content}}
+        </view> 
+      </view>
+      <view wx:if="{{!item.isRead}}" class='redCircle'></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+@import "../../assets/base.scss";
+
+.messageContent{
+  width: 750rpx;
+  height: auto;
+  padding: 30rpx 0;
+  .title{
+    font-size: $titleSize;
+    color: $titleColor;
+    font-weight: 600;
+    text-align: center;
+  }
+  .content{
+    width: 690rpx;
+    margin: 40rpx auto 0;
+    text-indent: 2em;
+    font-size: $infoSize;
+    color: $subTitleColor;
+  }
+}

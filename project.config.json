@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -70,6 +70,18 @@
 					"id": -1,
 					"name": "用户协议",
 					"pathName": "pages/agreement/agreement",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息中心",
+					"pathName": "pages/messageInbox/messageInbox",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息详情",
+					"pathName": "pages/messageContent/messageContent",
 					"query": ""
 				}
 			]

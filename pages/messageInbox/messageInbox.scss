@@ -1,0 +1,75 @@
+@import "../../assets/base.scss";
+
+.messageInbox{
+  width: 750rpx;
+  height: auto;
+  background-color: #fff;
+  .model{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100rpx;
+    border-bottom: 1rpx solid $borderColor;
+    &:active{
+      background-color: $borderColor;
+    }
+    &:last-child{
+      border-bottom: 0;
+    }
+    .logo-box{
+      width: 60rpx;
+      height: 60rpx;
+      margin-left: 20rpx;
+      image{
+        width: 60rpx;
+      }
+    }
+    .info-box{
+      margin-left: 20rpx;
+      width: 620rpx;
+      .up{
+        display: flex;
+        align-items: center;
+        width: inherit;
+        .title{
+          display: flex;
+          width: 430rpx;
+          font-size: 24rpx;
+          color: $titleColor;
+          .type{
+            width: 120rpx;
+            @extend .singleLine;
+          }
+          .name{
+            width: 310rpx;
+            @extend .singleLine;
+          }
+        }
+        .time{
+          width: 190rpx;
+          font-size: $infoSize;
+          color: $infoColor;
+          text-align: right;
+          @extend .singleLine;
+        }
+      }
+
+      .down{
+        font-size: $infoSize;
+        color: $infoColor;
+        margin-top: 4rpx;
+        @extend .singleLine;
+      }
+    }
+
+    .redCircle{
+      position: absolute;
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 50%;
+      background: red;
+      top: 6rpx;
+      right: 10rpx;
+    }
+  }
+}

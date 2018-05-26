@@ -63,7 +63,7 @@
         <image mode='widthFix' src="../../assets/img/turnRight.png" />
       </view>
     </view>
-    <view class='module'>
+    <view class='module' bindtap='lookMessageInbox'>
       <view class='title'>消息中心</view>
       <view class='value-turn'>
         <image mode='widthFix' src="../../assets/img/turnRight.png" />
@@ -150,7 +150,7 @@
         <image mode='widthFix' src="../../assets/img/turnRight.png" />
       </view>
     </view>
-    <view class='module'>
+    <view class='module' bindtap='lookMessageInbox'>
       <view class='title'>消息中心</view>
       <view class='value-turn'>
         <image mode='widthFix' src="../../assets/img/turnRight.png" />

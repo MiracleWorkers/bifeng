@@ -7,7 +7,9 @@
     "pages/changeUserName/changeUserName",
     "pages/cssInfo/cssInfo",
     "pages/aboutUs/aboutUs",
-    "pages/agreement/agreement"
+    "pages/agreement/agreement",
+    "pages/messageInbox/messageInbox",
+    "pages/messageContent/messageContent"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",
