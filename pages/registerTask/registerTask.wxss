@@ -53,7 +53,7 @@
     .topInfo .button image {
       width: 40rpx; }
     .topInfo .button .isAnimation {
-      animation: rotate 2s infinite linear; }
+      animation: rotate 800ms infinite linear; }
 
 @keyframes rotate {
   from {

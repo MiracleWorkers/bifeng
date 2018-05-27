@@ -6,7 +6,8 @@ Page({
    */
   data: {
     refresh: false, // 顶部刷新icon动画
-    check: true
+    check: true,
+    isShowPhoneCall: false // 是否显示联系充值组件
   },
 
   /**
@@ -31,6 +32,11 @@ Page({
         refresh:false
       })
     },2000)
+  },
+  // 显示联系充值组件
+  showPhoneCall:function(){
+    this.setData({
+      isShowPhoneCall: true
+    })
   }
-
 })

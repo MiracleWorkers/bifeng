@@ -1,0 +1,10 @@
+<view 
+  wx:if="{{isShow}}"
+  catchtap='close'
+  class="phoneCall">
+  <view class='content'>
+    <view class='title'>积分充值请联系客服</view>
+    <view class='num'>010-8891-1388</view>
+    <view class='button' bindtap='call'>点击拨打电话</view>
+  </view>
+</view>

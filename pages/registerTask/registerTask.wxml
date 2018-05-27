@@ -3,7 +3,7 @@
     <view class='text'>
       通过
       <text>转发任务</text> ,找人帮您转发文章页面，增加曝光量。发布任务需要CSS，您的积分余额目前为 0 CSS。您可以
-      <text class='recharge'>联系充值</text>
+      <text class='recharge' bindtap='showPhoneCall'>联系充值</text>
     </view>
     <view class='button' bindtap='refreshData'>
       <image 
@@ -103,7 +103,7 @@
     <view class='module disableActive'>
       <view class='title'>我要验收</view>
       <view class='value-text'>
-        <switch checked='{{check}}' bindchange="checkChange"/>
+        <switch color='#e27b10' checked='{{check}}' bindchange="checkChange"/>
       </view>
     </view>
   </view>
@@ -163,3 +163,6 @@
     </view>
   </view>
 </view>
+
+<!-- 拨打电话 -->
+<phone-call isShow="{{isShowPhoneCall}}" />
