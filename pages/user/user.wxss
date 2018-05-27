@@ -88,6 +88,7 @@
     background-color: #fff;
     margin-top: 60rpx; }
   .providerPage .module, .masterPage .module {
+    position: relative;
     display: flex;
     align-items: center;
     width: 750rpx;
@@ -121,6 +122,14 @@
       .providerPage .module .value-turn image, .masterPage .module .value-turn image {
         width: 30rpx;
         margin-left: 16rpx; }
+    .providerPage .module .redCircle, .masterPage .module .redCircle {
+      position: absolute;
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 50%;
+      background: red;
+      top: 10rpx;
+      right: 10rpx; }
   .providerPage .module-signIn, .masterPage .module-signIn {
     display: flex;
     align-items: center;

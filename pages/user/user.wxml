@@ -30,7 +30,7 @@
         <image mode='widthFix' src='../../assets/img/aver.jpeg' />
       </view>
     </view>
-    <view class='module'>
+    <view class='module' bindtap='showBindPhone'>
       <view class='title'>手机号</view>
       <view class='value-text'>未绑定</view>
     </view>
@@ -68,6 +68,7 @@
       <view class='value-turn'>
         <image mode='widthFix' src="../../assets/img/turnRight.png" />
       </view>
+      <view class='redCircle'></view>
     </view>
     <view class='module' bindtap='switchRole'>
       <view class='title'>切换角色</view>
@@ -117,7 +118,7 @@
         <image mode='widthFix' src='../../assets/img/aver.jpeg' />
       </view>
     </view>
-    <view class='module'>
+    <view class='module' bindtap='showBindPhone'>
       <view class='title'>手机号</view>
       <view class='value-text'>未绑定</view>
     </view>
@@ -155,6 +156,7 @@
       <view class='value-turn'>
         <image mode='widthFix' src="../../assets/img/turnRight.png" />
       </view>
+      <view class='redCircle'></view>
     </view>
     <view class='module' bindtap='switchRole'>
       <view class='title'>切换角色</view>
@@ -190,3 +192,6 @@
     </view>
   </view>
 </view>
+
+<!-- 绑定手机号组件 -->
+<bind-phone isShow="{{isShowBindPhone}}" />

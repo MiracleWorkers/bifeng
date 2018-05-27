@@ -5,7 +5,8 @@ Page({
   data: {
     // init：首次进入； provider： 服务商页面； master： 雇主页面
     userPage: "provider",
-    isSignIn: false
+    isSignIn: false,
+    isShowBindPhone: false
   },
 
   /**
@@ -14,7 +15,12 @@ Page({
   onLoad: function (options) {
 
   },
-
+  // 显示绑定手机号组件
+  showBindPhone:function(){
+    this.setData({
+      isShowBindPhone: true
+    })
+  },
   // 页面跳转 -> 修改昵称或雇主名
   changeUserName(e){
     wx.navigateTo({

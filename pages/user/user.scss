@@ -86,6 +86,7 @@
   }
 
   .module {
+    position: relative;
     display: flex;
     align-items: center;
     width: 750rpx;
@@ -136,6 +137,16 @@
         width: 30rpx;
         margin-left: 16rpx;
       }
+    }
+    //  未读消息
+    .redCircle{
+      position: absolute;
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 50%;
+      background: red;
+      top: 10rpx;
+      right: 10rpx;
     }
   }
   // 签到

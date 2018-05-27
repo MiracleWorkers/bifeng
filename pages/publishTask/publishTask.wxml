@@ -1,0 +1,17 @@
+<view class="container">
+  <view class='title'>选择您要发布的任务类型</view>
+  <view 
+    class="model"
+    bindtap='selectModel'
+    data-index="{{index}}"
+    wx:for="{{taskList}}"
+    wx:key="{{item.name}}">
+    <view class="model-title {{item.isCheck?'isActive':''}}">{{item.name}}</view>
+    <view class='model-info'>{{item.info}}</view>
+  </view>
+  <view 
+    class="button {{activeButton?'active':''}}"
+    bindtap='_blankTaskContent'>
+    下一步
+    </view>
+</view>

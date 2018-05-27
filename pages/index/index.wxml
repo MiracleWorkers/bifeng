@@ -49,7 +49,7 @@
       </view>
     </view>
   </view>
-  <include src="../../components/taskShowModel/index.wxml" />
+  <include src="../../templates/taskShowModel/index.wxml" />
 
   <!-- 专题 -->
   <view class='topics'>

@@ -19,7 +19,7 @@ Page({
       {
         name: "发布任务",
         icon: "",
-        path: ""
+        path: "../publishTask/publishTask"
       }
     ],
     selectBar: [
@@ -94,6 +94,13 @@ Page({
     this.setData({
       FLAG_MASK: false,
       selectBar: this.data.selectBar
+    })
+  },
+  // 页面跳转 -> 任务发布
+  _blankPage:function(e){
+    const path = e.currentTarget.dataset.path;
+    wx.navigateTo({
+      url: path,
     })
   }
 });

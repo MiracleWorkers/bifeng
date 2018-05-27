@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -82,6 +82,18 @@
 					"id": -1,
 					"name": "消息详情",
 					"pathName": "pages/messageContent/messageContent",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布任务",
+					"pathName": "pages/publishTask/publishTask",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布需求",
+					"pathName": "pages/registerTask/registerTask",
 					"query": ""
 				}
 			]

@@ -1,0 +1,89 @@
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel, .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before, .container .title::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after, .container .title::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.container {
+  position: relative;
+  background-color: #fff; }
+  .container .title {
+    height: 140rpx;
+    color: #e27b10;
+    font-size: 36rpx; }
+    .container .title:before {
+      width: 100rpx;
+      margin-right: 30rpx;
+      background-color: #e27b10; }
+    .container .title:after {
+      width: 100rpx;
+      margin-left: 30rpx;
+      background-color: #e27b10; }
+  .container .model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 540rpx;
+    height: auto;
+    margin: 40rpx auto 0; }
+    .container .model .model-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 90rpx;
+      font-size: 34rpx;
+      color: #2c2c2c;
+      background-color: #eee; }
+    .container .model .isActive {
+      background-color: #e27b10;
+      color: #fff; }
+    .container .model .model-info {
+      font-size: 22rpx;
+      color: #bfbfbf;
+      margin-top: 10rpx; }
+  .container .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20rpx;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 680rpx;
+    height: 80rpx;
+    background-color: #fff;
+    border: 1rpx solid #e6e6e6;
+    color: #e6e6e6;
+    font-size: 28rpx; }
+  .container .active {
+    background-color: #e27b10;
+    color: #fff; }
+    .container .active:active {
+      opacity: 0.8; }

@@ -1,0 +1,162 @@
+.singleLine, .module .value-text, .module .value-img, .module .value-turn, .module .value-img text, .module .value-turn text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 0;
+  width: 690rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+  color: #515151; }
+  .topInfo .text {
+    width: 580rpx; }
+    .topInfo .text text {
+      color: #2c2c2c;
+      font-weight: 600; }
+    .topInfo .text .recharge {
+      color: #e27b10;
+      text-decoration: underline; }
+  .topInfo .button {
+    display: flex;
+    justify-content: center;
+    width: 90rpx; }
+    .topInfo .button image {
+      width: 40rpx; }
+    .topInfo .button .isAnimation {
+      animation: rotate 2s infinite linear; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+
+.one {
+  width: 750rpx;
+  background-color: #fff; }
+
+.two {
+  width: 750rpx;
+  background-color: #fff;
+  margin-top: 30rpx; }
+
+.three {
+  width: 750rpx;
+  background-color: #fff;
+  margin-top: 40rpx; }
+
+.four {
+  margin-top: 40rpx;
+  background-color: #fff; }
+
+.module {
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 90rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  font-size: 34rpx;
+  color: #bfbfbf; }
+  .module:last-child {
+    border-bottom: 0; }
+  .module:active {
+    background-color: #e6e6e6; }
+  .module .title {
+    width: 40%;
+    padding-left: 30rpx;
+    color: #2c2c2c; }
+  .module .value-text, .module .value-img, .module .value-turn {
+    width: 60%;
+    padding-right: 30rpx;
+    text-align: right; }
+  .module .value-img, .module .value-turn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .module .value-img text, .module .value-turn text {
+      display: block;
+      width: 360rpx; }
+    .module .value-img .avter, .module .value-turn .avter {
+      width: 70rpx; }
+    .module .value-img .banner, .module .value-turn .banner {
+      width: 160rpx;
+      height: 70rpx; }
+    .module .value-img .turnImg, .module .value-turn .turnImg {
+      width: 30rpx;
+      margin-left: 16rpx; }
+  .module .value-turn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .module .value-turn image {
+      width: 30rpx;
+      margin-left: 16rpx; }
+
+.disableActive:active {
+  background-color: #fff; }
+
+.subTitle {
+  font-size: 28rpx;
+  color: #bfbfbf;
+  margin-top: 10rpx;
+  padding-left: 30rpx; }
+
+.taskContent {
+  background-color: #fff;
+  margin-top: 30rpx;
+  height: 140rpx; }
+  .taskContent .value-turn text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal; }
+
+.button-box {
+  width: 750rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button-box .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680rpx;
+    height: 80rpx;
+    background-color: #e27b10;
+    color: #fff;
+    font-size: 30rpx; }
+    .button-box .button:active {
+      opacity: 0.8; }

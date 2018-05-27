@@ -1,0 +1,79 @@
+@import "../../assets/base.scss";
+
+
+.container{
+  position: relative;
+  background-color: #fff;
+
+  .title{
+    @extend .bottomLineModel;
+    height: 140rpx;
+    color: $themeColor;
+    font-size: 36rpx;
+
+    &:before {
+      width: 100rpx;
+      margin-right: 30rpx;
+      background-color: $themeColor;
+    }
+
+    &:after {
+      width: 100rpx;
+      margin-left: 30rpx;
+      background-color: $themeColor;
+    }
+  }
+
+  .model{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 540rpx;
+    height: auto;
+    margin: 40rpx auto 0;
+    .model-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 90rpx;
+      font-size: $titleSize;
+      color: $titleColor;
+      background-color: #eee;
+    }
+    .isActive{
+      background-color: $themeColor;
+      color: #fff;
+    }
+    .model-info{
+      font-size: $infoSize;
+      color: $infoColor;
+      margin-top: 10rpx;
+    }
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20rpx;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 680rpx;
+    height: 80rpx;
+    background-color: #fff;
+    border: 1rpx solid $borderColor;
+    color: $borderColor;
+    font-size: 28rpx;
+
+  }
+  .active{
+    background-color: $themeColor;
+    color: #fff;
+    &:active{
+      opacity: 0.8;
+    }
+  }
+}

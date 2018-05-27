@@ -3,7 +3,12 @@
   <view class="stateBox">
     <!-- 顶部按钮 -->
     <view class="linkButtons">
-      <view class="button" wx:for="{{topButtonList}}" wx:key="name">
+      <view 
+        class="button" 
+        wx:for="{{topButtonList}}" 
+        wx:key="name"
+        data-path='{{item.path}}'
+        bindtap='_blankPage'>
         <view class="icon"></view>
         <text>{{item.name}}</text>
       </view>
@@ -52,8 +57,8 @@
 
   <!-- 展示内容 -->
   <view class='showContentBox'>
-    <include src="../../components/taskShowModel/index.wxml" />
-    <include src="../../components/taskShowModel/index.wxml" />
+    <include src="../../templates/taskShowModel/index.wxml" />
+    <include src="../../templates/taskShowModel/index.wxml" />
 
     <!-- 底线 -->
     <view class="bottomLine">我是有底线的</view>
