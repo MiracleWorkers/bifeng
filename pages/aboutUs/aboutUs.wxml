@@ -1,6 +1,6 @@
 <view class="container">
   <view class='logobox'>
-    <image mode='widthFix' src='../../assets/img/aver.jpeg' />
+    <image mode='widthFix' src='../../assets/img/logo.png' />
     <text>V 0.1.0</text>
   </view>
   <view class='companyInfo'>

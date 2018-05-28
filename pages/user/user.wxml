@@ -41,7 +41,7 @@
       <view class='title'>积分</view>
       <view class='value-text'>10000 CSS</view>
     </view>
-    <view class='module'>
+    <view class='module' bindtap='_blankMyComplyTask'>
       <view class='title'>我执行的任务</view>
       <view class='value-turn'>
         <text>1 项</text>
@@ -129,7 +129,7 @@
       <view class='title'>积分</view>
       <view class='value-text'>10000 CSS</view>
     </view>
-    <view class='module'>
+    <view class='module' bindtap='_blankMyPublishTask'>
       <view class='title'>我发布的任务</view>
       <view class='value-turn'>
         <text>1 项</text>

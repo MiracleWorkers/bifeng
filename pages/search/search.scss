@@ -1,0 +1,54 @@
+@import "../../assets/base.scss";
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 90rpx;
+  background: #fff;
+  .input {
+    display: flex;
+    align-items: center;
+    width: 580rpx;
+    height: 48rpx;
+    border-radius: 48rpx;
+    border: 2rpx solid $borderColor;
+    font-size: 22rpx;
+    color: #999;
+    background: #fff;
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70rpx;
+      height: 100%;
+    }
+    input{
+      width: 450rpx;
+      height: 100%;
+      color: $titleColor;
+    }
+  }
+}
+
+// 展示搜索结果
+@import "../../templates/taskShowModel/style.scss";
+.result{
+  width: 750rpx;
+  height: auto;
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+
+.noresult{
+  @extend .result;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120rpx;
+  font-size: 28rpx;
+  letter-spacing: 1rpx;
+  color: $infoColor;
+  background-color: transparent;
+}

@@ -25,6 +25,8 @@
         width: 80rpx;
         height: 80rpx;
         border-radius: 50%;
+        border: 1rpx solid $borderColor;
+        box-sizing: border-box;
       }
       .user-name {
         color: $titleColor;

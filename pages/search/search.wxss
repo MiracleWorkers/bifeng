@@ -3,7 +3,7 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.bottomLineModel, .bottomLine {
+.bottomLineModel {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
   background: #fff;
   font-size: 24rpx;
   color: #515151; }
-  .bottomLineModel::before, .bottomLine::before {
+  .bottomLineModel::before {
     content: "";
     display: inline-block;
     width: 200rpx;
@@ -20,7 +20,7 @@
     margin-right: 8rpx;
     background: #e6e6e6;
     vertical-align: middle; }
-  .bottomLineModel::after, .bottomLine::after {
+  .bottomLineModel::after {
     content: "";
     display: inline-block;
     width: 200rpx;
@@ -29,12 +29,40 @@
     background: #e6e6e6;
     vertical-align: middle; }
 
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 90rpx;
+  background: #fff; }
+  .search .input {
+    display: flex;
+    align-items: center;
+    width: 580rpx;
+    height: 48rpx;
+    border-radius: 48rpx;
+    border: 2rpx solid #e6e6e6;
+    font-size: 22rpx;
+    color: #999;
+    background: #fff; }
+    .search .input .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70rpx;
+      height: 100%; }
+    .search .input input {
+      width: 450rpx;
+      height: 100%;
+      color: #2c2c2c; }
+
 .singleLine {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.bottomLineModel, .bottomLine {
+.bottomLineModel {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +71,7 @@
   background: #fff;
   font-size: 24rpx;
   color: #515151; }
-  .bottomLineModel::before, .bottomLine::before {
+  .bottomLineModel::before {
     content: "";
     display: inline-block;
     width: 200rpx;
@@ -51,7 +79,7 @@
     margin-right: 8rpx;
     background: #e6e6e6;
     vertical-align: middle; }
-  .bottomLineModel::after, .bottomLine::after {
+  .bottomLineModel::after {
     content: "";
     display: inline-block;
     width: 200rpx;
@@ -169,14 +197,18 @@
       .task-show-model .task-tags .kind text {
         font-weight: 600; }
 
-.topImage {
+.result, .noresult {
   width: 750rpx;
-  height: 200rpx;
-  overflow: hidden;
-  background: #f5f5f5; }
-  .topImage image {
-    display: block;
-    width: 100%; }
+  height: auto;
+  background-color: #fff;
+  margin-top: 30rpx; }
 
-.bottomLine {
-  background: transparent; }
+.noresult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120rpx;
+  font-size: 28rpx;
+  letter-spacing: 1rpx;
+  color: #bfbfbf;
+  background-color: transparent; }

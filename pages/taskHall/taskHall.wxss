@@ -255,7 +255,9 @@
         .showContentBox .task-show-model .task-top .left image {
           width: 80rpx;
           height: 80rpx;
-          border-radius: 50%; }
+          border-radius: 50%;
+          border: 1rpx solid #e6e6e6;
+          box-sizing: border-box; }
         .showContentBox .task-show-model .task-top .left .user-name {
           color: #2c2c2c;
           font-size: 28rpx;

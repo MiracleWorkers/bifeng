@@ -12,7 +12,7 @@
     </view>
     <!-- 搜索框 -->
     <view class="searchBox">
-      <view class="input">
+      <view class="input" bindtap='_blankSearch'>
         <view class="icon">
           <icon type="search" size="12" color="#bfbfbf" />
         </view>

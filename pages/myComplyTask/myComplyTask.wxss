@@ -1,0 +1,165 @@
+.singleLine, .resultbox .screenbox .screen .task-model .model-info .info-title, .resultbox .screenbox .screen .task-model .model-info .tags .left {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.selectbox {
+  display: flex;
+  width: 750rpx;
+  height: 90rpx;
+  background-color: #fff; }
+  .selectbox .model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140rpx;
+    height: 100%;
+    font-size: 34rpx;
+    color: #2c2c2c;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #fff; }
+  .selectbox .active {
+    border-bottom: 2rpx solid #e27b10;
+    color: #e27b10; }
+
+.resultbox {
+  width: 750rpx;
+  min-height: 200rpx;
+  margin-top: 20rpx;
+  overflow: hidden; }
+  .resultbox .screenbox {
+    display: flex;
+    width: 200%;
+    height: auto;
+    transition: transform 300ms; }
+    .resultbox .screenbox .screen {
+      width: 750rpx;
+      height: auto;
+      color: #fff; }
+      .resultbox .screenbox .screen .singleLine, .resultbox .screenbox .screen .task-model .model-info .info-title, .resultbox .screenbox .screen .task-model .model-info .tags .left {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .resultbox .screenbox .screen .bottomLineModel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 750rpx;
+        height: 200rpx;
+        background: #fff;
+        font-size: 24rpx;
+        color: #515151; }
+        .resultbox .screenbox .screen .bottomLineModel::before {
+          content: "";
+          display: inline-block;
+          width: 200rpx;
+          height: 2rpx;
+          margin-right: 8rpx;
+          background: #e6e6e6;
+          vertical-align: middle; }
+        .resultbox .screenbox .screen .bottomLineModel::after {
+          content: "";
+          display: inline-block;
+          width: 200rpx;
+          height: 2rpx;
+          margin-left: 8rpx;
+          background: #e6e6e6;
+          vertical-align: middle; }
+      .resultbox .screenbox .screen .task-model {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 750rpx;
+        padding: 20rpx 0;
+        color: #2c2c2c;
+        background-color: #fff;
+        border-bottom: 1rpx solid #e6e6e6; }
+        .resultbox .screenbox .screen .task-model:last-child {
+          border-bottom: 0; }
+        .resultbox .screenbox .screen .task-model:active {
+          background: #f5f5f5; }
+        .resultbox .screenbox .screen .task-model image {
+          display: block;
+          width: 120rpx;
+          height: 120rpx;
+          border: 1rpx solid #e6e6e6;
+          box-sizing: border-box; }
+        .resultbox .screenbox .screen .task-model .model-info {
+          width: 570rpx; }
+          .resultbox .screenbox .screen .task-model .model-info .info-title {
+            width: 100%;
+            font-size: 28rpx; }
+            .resultbox .screenbox .screen .task-model .model-info .info-title .mark {
+              display: inline-block;
+              padding: 2rpx 8rpx;
+              box-sizing: border-box;
+              border: 1rpx solid #e6e6e6;
+              vertical-align: bottom;
+              margin-left: 8rpx;
+              font-size: 22rpx; }
+            .resultbox .screenbox .screen .task-model .model-info .info-title .best {
+              border: 1rpx solid #e27b10;
+              color: #e27b10; }
+          .resultbox .screenbox .screen .task-model .model-info .tags {
+            display: flex;
+            align-items: center;
+            width: 570rpx;
+            margin-top: 10rpx;
+            font-size: 22rpx; }
+            .resultbox .screenbox .screen .task-model .model-info .tags .left {
+              width: 50%; }
+              .resultbox .screenbox .screen .task-model .model-info .tags .left text {
+                display: inline-block;
+                padding: 0 6rpx;
+                height: 32rpx;
+                line-height: 32rpx;
+                background: #f5f5f5;
+                margin-left: 8rpx; }
+            .resultbox .screenbox .screen .task-model .model-info .tags .right {
+              width: 50%;
+              text-align: right;
+              font-size: 19rpx; }
+          .resultbox .screenbox .screen .task-model .model-info .sort {
+            display: flex;
+            align-items: center;
+            width: 570rpx;
+            margin-top: 10rpx;
+            font-size: 22rpx; }
+            .resultbox .screenbox .screen .task-model .model-info .sort .left {
+              width: 50%;
+              padding-left: 8rpx; }
+            .resultbox .screenbox .screen .task-model .model-info .sort .right {
+              width: 50%;
+              text-align: right; }
+      .resultbox .screenbox .screen .noTask {
+        display: block;
+        color: #bfbfbf;
+        text-align: center;
+        padding-top: 40rpx;
+        font-size: 28rpx; }

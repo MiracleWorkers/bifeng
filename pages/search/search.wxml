@@ -1,0 +1,28 @@
+<view class="container">
+  <view class='search'>
+    <view class="input">
+      <view class="icon">
+        <icon type="search" size="12" color="#bfbfbf" />
+      </view>
+      <input 
+        confirm-type='search' 
+        value="{{searchText}}"
+        bindinput='bindKeyInput'
+        placeholder='输入关键词，查找感兴趣的任务' 
+      />
+      <view class='icon' bindtap='clearContent'>
+        <icon type="clear" size="12" color="#bfbfbf" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 显示搜索结果 -->
+  <view class='result'>
+    <include src="../../templates/taskShowModel/index.wxml" />
+  </view>
+
+  <!-- 未查询到 -->
+  <view class='noresult'>
+    未查询到符合条件的任务
+  </view>
+</view>

@@ -11,7 +11,10 @@
     "pages/messageInbox/messageInbox",
     "pages/messageContent/messageContent",
     "pages/publishTask/publishTask",
-    "pages/registerTask/registerTask"
+    "pages/registerTask/registerTask",
+    "pages/search/search",
+    "pages/myPublishTask/myPublishTask",
+    "pages/myComplyTask/myComplyTask"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

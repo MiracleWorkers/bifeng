@@ -95,6 +95,24 @@
 					"name": "发布需求",
 					"pathName": "pages/registerTask/registerTask",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "查找任务页面",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我发布的任务",
+					"pathName": "pages/myPublishTask/myPublishTask",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我执行的任务",
+					"pathName": "pages/myComplyTask/myComplyTask",
+					"query": ""
 				}
 			]
 		}

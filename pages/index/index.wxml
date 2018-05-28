@@ -78,33 +78,7 @@
     <view class='top'>
       <text>精品任务</text>
     </view>
-    <view class='task-model'>
-      <image src="../../assets/img/aver.jpeg" />
-      <view class='model-info'>
-        <view class='info-title'>
-          <text class='mark'>置顶</text>
-          <text class="mark best">精品</text> EOS超级节点再创币圈神话超级节点再创币
-        </view>
-        <view class='tags'>
-          <view class='left'>
-            <text>EOS</text>
-            <text>柚子</text>
-            <text>ETH</text>
-          </view>
-          <view class='right'>
-            每成功邀请1人注册 +1000CSS
-          </view>
-        </view>
-        <view class='sort'>
-          <view class='left'>
-            任务分类: 涨粉任务
-          </view>
-          <view class='right'>
-            赏金剩余75%
-          </view>
-        </view>
-      </view>
-    </view>
+    <include src="../../templates/bestTask/index.wxml" />
   </view>
   
   <!-- 底线 -->

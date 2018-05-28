@@ -1,0 +1,24 @@
+<view class="container">
+  <view class='selectbox'>
+    <view class="model {{item.isActive?'active':''}}" wx:for="{{navList}}" wx:key="{{item.title}}" bindtap='switchModel' data-index='{{index}}'>
+      {{item.title}}
+    </view>
+  </view>
+
+  <!-- 内容显示 -->
+  <view class='resultbox'>
+    <view class='screenbox' style='transform:translateX({{-750*activeNum}}rpx)'>
+      <view class='screen'>
+        <include src="../../templates/bestTask/index.wxml" />
+        <include src="../../templates/bestTask/index.wxml" />
+        <include src="../../templates/bestTask/index.wxml" />
+      </view>
+      <view class='screen'>
+        <include src="../../templates/bestTask/index.wxml" />
+      </view>
+      <view class='screen'>
+        <text class="noTask">暂时没有已结束的任务</text>
+      </view>
+    </view>
+  </view>
+</view>

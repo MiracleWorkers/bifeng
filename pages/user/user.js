@@ -51,6 +51,16 @@ Page({
       url: "../messageInbox/messageInbox"
     })
   },
+  _blankMyComplyTask:function(){
+    wx.navigateTo({
+      url: "../myComplyTask/myComplyTask"
+    })
+  },
+  _blankMyPublishTask:function(){
+    wx.navigateTo({
+      url: "../myPublishTask/myPublishTask"
+    })
+  },
   // 签到
   signIn:function(){
     if(this.data.isSignIn) return;

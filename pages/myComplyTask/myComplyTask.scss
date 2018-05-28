@@ -1,0 +1,50 @@
+@import "../../assets/base.scss";
+
+.selectbox{
+  display: flex;
+  width: 750rpx;
+  height: 90rpx;
+  background-color: #fff;
+  .model{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140rpx;
+    height: 100%;
+    font-size: $titleSize;
+    color: $titleColor;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #fff;
+  }
+  .active{
+    border-bottom: 2rpx solid $themeColor;
+    color: $themeColor;
+  }
+}
+
+// 内容的展示
+.resultbox{
+  width: 750rpx;
+  min-height: 200rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  .screenbox{
+    display: flex;
+    width: 200%;
+    height: auto;
+    transition: transform 300ms;
+    .screen{
+      width: 750rpx;
+      height: auto;
+      color: #fff;
+      @import "../../templates/bestTask/style.scss";
+      .noTask{
+        display: block;
+        color: $infoColor;
+        text-align: center;
+        padding-top: 40rpx;
+        font-size: $subTitleSize;
+      }
+    }
+  }
+}

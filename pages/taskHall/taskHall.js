@@ -9,12 +9,12 @@ Page({
       {
         name: "我执行的",
         iconName: "bf-lishijilu",
-        path: ""
+        path: "../myComplyTask/myComplyTask"
       },
       {
         name: "我发布的",
         iconName: "bf-woyouziyuan-wodefabu-yifabu-click",
-        path: ""
+        path: "../myPublishTask/myPublishTask"
       },
       {
         name: "发布任务",
@@ -101,6 +101,12 @@ Page({
     const path = e.currentTarget.dataset.path;
     wx.navigateTo({
       url: path,
+    })
+  },
+  // 页面跳转 -> 关键字查询页面
+  _blankSearch:function(){
+    wx.navigateTo({
+      url: '../search/search',
     })
   }
 });

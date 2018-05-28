@@ -126,7 +126,9 @@
   .notification-box .avater {
     width: 90rpx;
     height: 90rpx;
-    margin-left: 30rpx; }
+    margin-left: 30rpx;
+    border: 1rpx solid #e6e6e6;
+    box-sizing: border-box; }
   .notification-box .notification-text {
     width: 560rpx;
     margin-left: 40rpx; }
@@ -224,7 +226,9 @@
       .task-show-model .task-top .left image {
         width: 80rpx;
         height: 80rpx;
-        border-radius: 50%; }
+        border-radius: 50%;
+        border: 1rpx solid #e6e6e6;
+        box-sizing: border-box; }
       .task-show-model .task-top .left .user-name {
         color: #2c2c2c;
         font-size: 28rpx;
@@ -373,12 +377,43 @@
     font-weight: 600; }
     .taskBest .top text {
       margin-left: 30rpx; }
+  .taskBest .singleLine, .taskBest .notification-box .notification-text .noti-title, .notification-box .notification-text .taskBest .noti-title, .taskBest .task-model .model-info .info-title, .taskBest .task-model .model-info .tags .left {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .taskBest .bottomLineModel, .taskBest .bottomLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750rpx;
+    height: 200rpx;
+    background: #fff;
+    font-size: 24rpx;
+    color: #515151; }
+    .taskBest .bottomLineModel::before, .taskBest .bottomLine::before {
+      content: "";
+      display: inline-block;
+      width: 200rpx;
+      height: 2rpx;
+      margin-right: 8rpx;
+      background: #e6e6e6;
+      vertical-align: middle; }
+    .taskBest .bottomLineModel::after, .taskBest .bottomLine::after {
+      content: "";
+      display: inline-block;
+      width: 200rpx;
+      height: 2rpx;
+      margin-left: 8rpx;
+      background: #e6e6e6;
+      vertical-align: middle; }
   .taskBest .task-model {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 750rpx;
     padding: 20rpx 0;
+    color: #2c2c2c;
+    background-color: #fff;
     border-bottom: 1rpx solid #e6e6e6; }
     .taskBest .task-model:last-child {
       border-bottom: 0; }
@@ -387,7 +422,9 @@
     .taskBest .task-model image {
       display: block;
       width: 120rpx;
-      height: 120rpx; }
+      height: 120rpx;
+      border: 1rpx solid #e6e6e6;
+      box-sizing: border-box; }
     .taskBest .task-model .model-info {
       width: 570rpx; }
       .taskBest .task-model .model-info .info-title {
