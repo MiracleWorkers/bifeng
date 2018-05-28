@@ -1,4 +1,6 @@
 @import "../../assets/base.scss";
+@import "../../assets/font/iconfont.wxss";
+
 // 轮播图大小
 .slide-image {
   width: 750rpx;
@@ -10,19 +12,33 @@
   justify-content: space-around;
   align-content: center;
   width: 750rpx;
-  height: 200rpx;
+  height: 160rpx;
   background-color: #fff;
   .taskContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 120rpx;
-    height: 200rpx;
+    align-items: center;
+    width: 33.333%;
+    height: 100%;
+    &:active{
+      background-color: $borderColor;
+    }
     .icon {
-      width: 100%;
-      height: 120rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90rpx;
+      height: 90rpx;
       border-radius: 50%;
-      background: $borderColor;
+      .iconfont{
+        display: block;
+        font-size: 56rpx;
+        color: $themeColor;
+      }
+      .bf-zhuanfa{
+        font-size: 48rpx;
+      }
     }
     .text {
       display: block;
@@ -30,7 +46,7 @@
       margin-top: 10rpx;
       font-size: 28rpx;
       text-align: center;
-      color: #8a8a8a;
+      color: $titleColor;
     }
   }
 }
@@ -148,9 +164,16 @@
         background-color: #f5f5f5;
       }
       .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 140rpx;
         height: 140rpx;
-        background: $infoColor;
+        .iconfont{
+          display: block;
+          font-size: 76rpx;
+          color: $themeColor;
+        }
       }
       .text{
         display: block;

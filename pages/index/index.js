@@ -8,9 +8,9 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: [
-      '../../assets/img/weChat1.jpg',
-      '../../assets/img/weChat2.jpg',
-      '../../assets/img/weChat1.jpg'
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -19,37 +19,37 @@ Page({
     taskList: [
       {
         title: "转发任务",
-        iconName: "",
+        iconName: "bf-zhuanfa",
         path: "/index"
       }, {
         title: "注册任务",
-        iconName: "",
+        iconName: "bf-zhuce",
         path: "/index"
       }, {
         title: "评论任务",
-        iconName: "",
+        iconName: "bf-pinglun",
         path: "/index"
       }, {
         title: "涨粉任务",
-        iconName: "",
+        iconName: "bf-fensi",
         path: "/index"
       }
     ],
     topicsList: [{
       title: "优质专选",
-      imgSrc: "",
+      iconName: "bf-youzhigongyingshang",
       path: "../topics/topics?module=A"
     }, {
       title: "趣味专题",
-      imgSrc: "",
+      iconName: "bf-quwei",
       path: "../topics/topics?module=B"
     }, {
       title: "酬劳丰厚",
-      imgSrc: "",
+      iconName: "bf-qian",
       path: "../topics/topics?module=C"
     }, {
       title: "机会多多",
-      imgSrc: "",
+      iconName: "bf-jihui01",
       path: "../topics/topics?module=D"
     }]
   },

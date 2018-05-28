@@ -1,4 +1,5 @@
 @import "../../assets/base.scss";
+@import "../../assets/font/iconfont.wxss";
 
 // 遮罩层
 .maskbox{
@@ -41,11 +42,25 @@
       }
 
       .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 60rpx;
         height: 60rpx;
-        background: #f5f5f5;
+        text-align: center;
+        .iconfont{
+          display: block;
+          font-size: 50rpx;
+          color: $themeColor;
+        }
+        .bf-lishijilu{
+          font-size: 56rpx;
+        }
+        .bf-fabu{
+          font-size: 52rpx;
+        }
       }
-      text {
+      .name {
         font-size: $subTitleSize;
         margin-left: 12rpx;
       }

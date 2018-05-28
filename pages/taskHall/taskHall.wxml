@@ -3,14 +3,11 @@
   <view class="stateBox">
     <!-- 顶部按钮 -->
     <view class="linkButtons">
-      <view 
-        class="button" 
-        wx:for="{{topButtonList}}" 
-        wx:key="name"
-        data-path='{{item.path}}'
-        bindtap='_blankPage'>
-        <view class="icon"></view>
-        <text>{{item.name}}</text>
+      <view class="button" wx:for="{{topButtonList}}" wx:key="name" data-path='{{item.path}}' bindtap='_blankPage'>
+        <view class="icon">
+          <text class="iconfont {{item.iconName}}"></text>
+        </view>
+        <text class='name'>{{item.name}}</text>
       </view>
     </view>
     <!-- 搜索框 -->
@@ -26,30 +23,13 @@
     </view>
     <!-- 筛选框 -->
     <view class="selectBar">
-      <view 
-        class="model {{item.isOpen?'active':''}}" 
-        wx:for="{{selectBar}}" 
-        wx:key="{{index}}" 
-        data-key="{{index}}" 
-        bindtap="selectModel">
+      <view class="model {{item.isOpen?'active':''}}" wx:for="{{selectBar}}" wx:key="{{index}}" data-key="{{index}}" bindtap="selectModel">
         <text>{{item.value}}</text>
         <image mode="widthFix" src="../../assets/img/turn.png" />
       </view>
-      <view 
-        class='showSelectBox' 
-        wx:for="{{selectBar}}" 
-        wx:key="{{index}}"
-        wx:if="{{item.isOpen}}">
-        <view 
-          wx:for="{{item.itemList}}"
-          wx:for-index="childIndex"
-          wx:for-item="childItem"
-          wx:key="childItem"
-          bindtap='selectModelItem'
-          data-content="{{childItem}}"
-          data-parentKey="{{index}}"
-          class="item {{item.value===childItem?'isActive':''}}">
-            {{childItem}}
+      <view class='showSelectBox' wx:for="{{selectBar}}" wx:key="{{index}}" wx:if="{{item.isOpen}}">
+        <view wx:for="{{item.itemList}}" wx:for-index="childIndex" wx:for-item="childItem" wx:key="childItem" bindtap='selectModelItem' data-content="{{childItem}}" data-parentKey="{{index}}" class="item {{item.value===childItem?'isActive':''}}">
+          {{childItem}}
         </view>
       </view>
     </view>

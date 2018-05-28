@@ -8,17 +8,17 @@ Page({
     topButtonList: [
       {
         name: "我执行的",
-        icon: "",
+        iconName: "bf-lishijilu",
         path: ""
       },
       {
         name: "我发布的",
-        icon: "",
+        iconName: "bf-woyouziyuan-wodefabu-yifabu-click",
         path: ""
       },
       {
         name: "发布任务",
-        icon: "",
+        iconName: "bf-fabu",
         path: "../publishTask/publishTask"
       }
     ],

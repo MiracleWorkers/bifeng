@@ -20,7 +20,9 @@
   <!-- 任务列表 -->
   <view class="taskList">
     <view class="taskContent" wx:for="{{taskList}}" wx:key="title">
-      <view class="icon"></view>
+      <view class="icon">
+        <text class='iconfont {{item.iconName}}'></text>
+      </view>
       <text class="text">{{item.title}}</text>
     </view>
   </view>
@@ -63,7 +65,9 @@
         wx:key="title"
         data-item="{{item}}"
         bindtap="_blankTopics">
-        <view class='icon'></view>
+        <view class='icon'>
+          <text class='iconfont {{item.iconName}}'></text>
+        </view>
         <text class='text'>{{item.title}}</text>
       </view>
     </view>
