@@ -1,0 +1,59 @@
+@import "../../assets/base.scss";
+
+.container{
+  position: relative;
+  padding-top: 20rpx;
+  .inputbox{
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    height: 90rpx;
+    background-color: #fff;
+    input{
+      display: block;
+      width: 620rpx;
+      height: 90rpx;
+      padding-left: 30rpx;
+      font-size: 30rpx;
+      color: $titleColor;
+    }
+    icon{
+      margin-left: 20rpx;
+    }
+    .placeClass{
+      font-size: 28rpx;
+      color: #e6e6e6;
+    }
+  }
+  .textNum{
+    display: block;
+    width: 720rpx;
+    margin-top: 20rpx;
+    font-size: $subTitleSize;
+    color: $themeColor;
+    text{
+      margin-left: 30rpx;
+      text-decoration: underline;
+    }
+  }
+
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 640rpx;
+    height: 80rpx;
+    background-color: $themeColor;
+    font-size: 34rpx;
+    color: #fff;
+    letter-spacing: 20rpx;
+    text-indent: 20rpx;
+    &:active{
+      opacity: 0.8;
+    }
+  }
+}

@@ -68,5 +68,17 @@ Page({
     wx.navigateTo({
       url: '../taskSingleRewardSet/taskSingleRewardSet',
     })
+  },
+  // 页面跳转 -> 叮嘱
+  _blankSetStatement: function () {
+    wx.navigateTo({
+      url: '../taskStatementSet/taskStatementSet',
+    })
+  },
+  // 页面跳转 -> 添加链接(评论，公众号)
+  _blankSetLink: function () {
+    wx.navigateTo({
+      url: '../taskLinkSet/taskLinkSet',
+    })
   }
 })

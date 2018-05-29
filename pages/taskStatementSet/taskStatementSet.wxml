@@ -1,0 +1,23 @@
+<view class="container">
+  <view class='inputbox'>
+    <textarea
+      auto-height 
+      placeholder='输入您想对服务商说的话（选填）'
+      placeholder-class='placeClass'
+      maxlength='80'
+      value="{{statement}}"
+      bindinput='bindInput'
+      focus='true'
+       />
+    <icon 
+      wx:if='{{statement.length>0}}'
+      bindtap='clearInput'
+      type='clear' 
+      color='#e6e6e6' 
+      size='20'>
+      </icon>
+  </view>
+  <text class='textNum'>还可以输入{{80-statement.length<0?0:80-statement.length}}个字</text>
+
+  <view class='button'>确定</view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container">
+  <view class='inputbox'>
+    <input 
+      placeholder='请输入您公众号的微信号……'
+      placeholder-class='placeClass'
+      value="{{Link}}"
+      bindinput='bindInput'
+      focus='true'
+       />
+    <icon 
+      wx:if='{{Link.length>0}}'
+      bindtap='clearInput'
+      type='clear' 
+      color='#e6e6e6' 
+      size='20'>
+      </icon>
+  </view>
+  <view class='textNum'>
+    <text bindtap='clipboard'>一键粘贴</text>
+  </view>
+
+  <view class='button'>确定</view>
+</view>

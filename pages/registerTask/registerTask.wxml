@@ -92,7 +92,7 @@
       </view>
     </view>
 
-    <view class='module'>
+    <view class='module' bindtap='_blankSetStatement'>
       <view class='title'>雇主叮嘱</view>
       <view class='value-turn'>
         <text>好好干，以后这类任务还会发</text>
@@ -125,7 +125,7 @@
   <!-- 以下是其他需求发布页面部分 -->
   <!-- 注册任务 -->
   <view class='four'>
-    <view class='module'>
+    <view class='module' bindtap='_blankSetLink'>
       <view class='title'>注册页链接</view>
       <view class='value-turn'>
         <text>www.10086.com/123/33234234234234</text>
