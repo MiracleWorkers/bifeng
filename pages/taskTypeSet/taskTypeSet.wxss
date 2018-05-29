@@ -3,7 +3,7 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.bottomLineModel, .showContentBox .bottomLine {
+.bottomLineModel {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
   background: #fff;
   font-size: 24rpx;
   color: #515151; }
-  .bottomLineModel::before, .showContentBox .bottomLine::before {
+  .bottomLineModel::before {
     content: "";
     display: inline-block;
     width: 200rpx;
@@ -20,7 +20,7 @@
     margin-right: 8rpx;
     background: #e6e6e6;
     vertical-align: middle; }
-  .bottomLineModel::after, .showContentBox .bottomLine::after {
+  .bottomLineModel::after {
     content: "";
     display: inline-block;
     width: 200rpx;
@@ -79,269 +79,30 @@
 .bf-quwei:before {
   content: "\e7e7"; }
 
-.maskbox {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5); }
+.container:before {
+  content: "";
+  display: block;
+  width: 750rpx;
+  height: 30rpx;
+  background-color: #f5f5f5; }
 
-.stateBox {
-  position: fixed;
+.container .typeSelectBox {
   width: 750rpx;
   height: auto;
-  top: 0;
-  left: 0;
-  z-index: 4; }
-  .stateBox .linkButtons {
+  background: #fff; }
+  .container .typeSelectBox .model {
     display: flex;
-    width: 750rpx;
-    height: 90rpx;
-    border-bottom: 1rpx solid #e6e6e6;
-    background-color: #fff; }
-    .stateBox .linkButtons .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-      width: 33.33%;
-      height: inherit;
-      border-right: 1rpx solid #e6e6e6; }
-      .stateBox .linkButtons .button:last-child {
-        border-right: 0; }
-      .stateBox .linkButtons .button:active {
-        background-color: #e4e2e2; }
-      .stateBox .linkButtons .button .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60rpx;
-        height: 60rpx;
-        text-align: center; }
-        .stateBox .linkButtons .button .icon .iconfont {
-          display: block;
-          font-size: 50rpx;
-          color: #e27b10; }
-        .stateBox .linkButtons .button .icon .bf-lishijilu {
-          font-size: 56rpx; }
-        .stateBox .linkButtons .button .icon .bf-fabu {
-          font-size: 52rpx; }
-      .stateBox .linkButtons .button .name {
-        font-size: 28rpx;
-        margin-left: 12rpx; }
-  .stateBox .searchBox {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 750rpx;
-    height: 90rpx;
-    background: #fff; }
-    .stateBox .searchBox .input {
-      display: flex;
-      align-items: center;
-      width: 580rpx;
-      height: 48rpx;
-      border-radius: 48rpx;
-      border: 2rpx solid #e6e6e6;
-      font-size: 22rpx;
-      color: #999;
-      background: #fff; }
-      .stateBox .searchBox .input .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70rpx;
-        height: 100%; }
-  .stateBox .selectBar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 750rpx;
+    width: 100%;
     height: 80rpx;
-    background-color: #fff;
+    font-size: 34rpx;
+    color: #2c2c2c;
     border-bottom: 1rpx solid #e6e6e6; }
-    .stateBox .selectBar .model {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 32%;
-      height: 60rpx;
-      font-size: 26rpx;
-      font-weight: 600;
-      color: #515151; }
-      .stateBox .selectBar .model image {
-        display: inline-block;
-        width: 22rpx;
-        margin-right: 12rpx;
-        margin-left: 8rpx; }
-      .stateBox .selectBar .model:nth-child(1), .stateBox .selectBar .model:nth-child(2) {
-        width: 25%; }
-    .stateBox .selectBar .showSelectBox {
-      position: absolute;
-      width: 750rpx;
-      height: auto;
-      left: 0;
-      top: 100%;
-      background: #fff;
-      z-index: 3; }
-      .stateBox .selectBar .showSelectBox .item {
-        width: 100%;
-        padding-left: 40rpx;
-        height: 74rpx;
-        line-height: 74rpx;
-        font-size: 28rpx;
-        color: #515151;
-        border-top: 1rpx solid #e6e6e6; }
-        .stateBox .selectBar .showSelectBox .item:active {
-          background-color: #f5f5f5; }
-        .stateBox .selectBar .showSelectBox .item:last-child {
-          border-bottom: 1px solid #e6e6e6; }
-      .stateBox .selectBar .showSelectBox .isActive {
-        color: #e27b10; }
-    .stateBox .selectBar .active > image {
-      transform: rotate(-180deg); }
-
-.showContentBox {
-  padding-top: 260rpx;
-  background: #f5f5f5; }
-  .showContentBox .singleLine {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-  .showContentBox .bottomLineModel, .showContentBox .bottomLine {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 750rpx;
-    height: 200rpx;
-    background: #fff;
-    font-size: 24rpx;
-    color: #515151; }
-    .showContentBox .bottomLineModel::before, .showContentBox .bottomLine::before {
-      content: "";
-      display: inline-block;
-      width: 200rpx;
-      height: 2rpx;
-      margin-right: 8rpx;
-      background: #e6e6e6;
-      vertical-align: middle; }
-    .showContentBox .bottomLineModel::after, .showContentBox .bottomLine::after {
-      content: "";
-      display: inline-block;
-      width: 200rpx;
-      height: 2rpx;
-      margin-left: 8rpx;
-      background: #e6e6e6;
-      vertical-align: middle; }
-  .showContentBox .task-show-model {
-    height: auto;
-    margin-bottom: 20rpx;
-    background: #fff; }
-    .showContentBox .task-show-model:active {
-      background-color: #eeeeee; }
-    .showContentBox .task-show-model .task-top {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      padding: 10rpx 0;
-      color: #515151; }
-      .showContentBox .task-show-model .task-top text {
-        display: block; }
-      .showContentBox .task-show-model .task-top .left {
-        display: flex;
-        align-items: center;
-        width: 50%;
-        padding-left: 30rpx;
-        font-size: 28rpx; }
-        .showContentBox .task-show-model .task-top .left image {
-          width: 80rpx;
-          height: 80rpx;
-          border-radius: 50%;
-          border: 1rpx solid #e6e6e6;
-          box-sizing: border-box; }
-        .showContentBox .task-show-model .task-top .left .user-name {
-          color: #2c2c2c;
-          font-size: 28rpx;
-          margin-left: 20rpx; }
-      .showContentBox .task-show-model .task-top .right {
-        width: 50%;
-        padding-right: 30rpx;
-        text-align: right;
-        font-size: 22rpx; }
-    .showContentBox .task-show-model .thumb {
-      position: relative;
-      width: 690rpx;
-      margin: 6rpx auto 0;
-      overflow: hidden; }
-      .showContentBox .task-show-model .thumb image {
-        display: block;
-        width: 100%; }
-      .showContentBox .task-show-model .thumb .thumb-title {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 60rpx;
-        line-height: 60rpx;
-        font-size: 28rpx;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.6);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap; }
-        .showContentBox .task-show-model .thumb .thumb-title text {
-          margin-left: 20rpx; }
-      .showContentBox .task-show-model .thumb .toTop {
-        position: absolute;
-        top: 9rpx;
-        left: -34rpx;
-        width: 120rpx;
-        height: 40rpx;
-        line-height: 40rpx;
-        font-size: 22rpx;
-        text-align: center;
-        background: #f7f7f7;
-        transform: rotate(-45deg);
-        border-top: 1px solid e6e6e6;
-        border-bottom: 1px solid #e6e6e6; }
-      .showContentBox .task-show-model .thumb .best {
-        position: absolute;
-        top: 42rpx;
-        left: -50rpx;
-        width: 220rpx;
-        height: 40rpx;
-        line-height: 40rpx;
-        font-size: 22rpx;
-        text-align: center;
-        background: #f7f7f7;
-        color: #e27b10;
-        transform: rotate(-45deg);
-        border-top: 1px solid e6e6e6;
-        border-bottom: 1px solid #e6e6e6; }
-    .showContentBox .task-show-model .task-tags {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: 70rpx;
-      font-size: 24rpx; }
-      .showContentBox .task-show-model .task-tags .tags {
-        display: flex;
-        width: 60%;
-        padding-left: 30rpx; }
-        .showContentBox .task-show-model .task-tags .tags .tag {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 3rpx 10rpx;
-          background: #f5f5f5;
-          margin-left: 6rpx; }
-      .showContentBox .task-show-model .task-tags .kind {
-        width: 40%;
-        text-align: right;
-        padding-right: 30rpx; }
-        .showContentBox .task-show-model .task-tags .kind text {
-          font-weight: 600; }
-  .showContentBox .bottomLine {
-    background: transparent; }
+    .container .typeSelectBox .model:active {
+      background-color: #e6e6e6; }
+    .container .typeSelectBox .model text {
+      padding: 0 30rpx; }
+    .container .typeSelectBox .model .iconfont {
+      color: #e27b10;
+      font-size: 40rpx; }

@@ -1,0 +1,35 @@
+<view class="container">
+  <view class='inputbox'>
+    <input 
+      placeholder='请输入标签 单个标签最多五个字'
+      placeholder-class='placeClass'
+      maxlength='5'
+      value="{{cacheTag}}"
+      bindinput='bindInput'
+      focus='true'
+       />
+    <icon 
+      wx:if="{{cacheTag.length>0?true:false}}"
+      bindtap='addTag'
+      type='clear' 
+      color='#e6e6e6' 
+      size='20'>
+      </icon>
+  </view>
+  <view class='selectedTag'>
+    <view class='title'>已选标签 (最多三个)</view>
+    <view class='tagbox'>
+      <view class='tag' wx:for="{{tagList}}" wx:key="*this">
+        <text>{{item}}</text>
+        <icon 
+          bindtap='cancelTag'
+          data-index='{{index}}'
+          type="cancel" 
+          color='#515151' 
+          size='16'></icon>
+      </view>
+    </view>
+  </view>
+
+  <view class='button'>确定</view>
+</view>

@@ -14,7 +14,10 @@
     "pages/registerTask/registerTask",
     "pages/search/search",
     "pages/myPublishTask/myPublishTask",
-    "pages/myComplyTask/myComplyTask"
+    "pages/myComplyTask/myComplyTask",
+    "pages/taskTitleSet/taskTitleSet",
+    "pages/taskTypeSet/taskTypeSet",
+    "pages/taskTagSet/taskTagSet"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

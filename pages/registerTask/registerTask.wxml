@@ -15,7 +15,7 @@
 
   <!-- one -->
   <view class='one'>
-    <view class='module'>
+    <view class='module' bindtap='_blankSetTitle'>
       <view class='title'>标题</view>
       <view class='value-turn'>
         <text>未设置看是的法律快结束的开发</text>
@@ -23,7 +23,7 @@
       </view>
     </view>
 
-    <view class='module'>
+    <view class='module' bindtap='_blankSetType'>
       <view class='title'>类别</view>
       <view class='value-turn'>
         <text>项目动态</text>
@@ -31,7 +31,7 @@
       </view>
     </view>
 
-    <view class='module'>
+    <view class='module' bindtap='_blankSetTag'>
       <view class='title'>标签</view>
       <view class='value-turn'>
         <text>EOS 区块链 行业大佬</text>

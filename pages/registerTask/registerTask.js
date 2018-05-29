@@ -38,5 +38,23 @@ Page({
     this.setData({
       isShowPhoneCall: true
     })
+  },
+  // 页面跳转 -> 设置标题
+  _blankSetTitle:function(){
+    wx.navigateTo({
+      url: '../taskTitleSet/taskTitleSet',
+    })
+  },
+  // 页面跳转 -> 设置类型
+  _blankSetType: function () {
+    wx.navigateTo({
+      url: '../taskTypeSet/taskTypeSet',
+    })
+  },
+  // 页面跳转 -> 设置标签
+  _blankSetTag: function () {
+    wx.navigateTo({
+      url: '../taskTagSet/taskTagSet',
+    })
   }
 })

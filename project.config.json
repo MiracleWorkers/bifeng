@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 15,
 			"list": [
 				{
 					"id": -1,
@@ -113,6 +113,23 @@
 					"name": "我执行的任务",
 					"pathName": "pages/myComplyTask/myComplyTask",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置任务标题",
+					"pathName": "pages/taskTitleSet/taskTitleSet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置任务类型",
+					"pathName": "pages/taskTypeSet/taskTypeSet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置任务标签",
+					"pathName": "pages/taskTagSet/taskTagSet"
 				}
 			]
 		}

@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='typeSelectBox'>
+    <view 
+      class='model' 
+      wx:for="{{typeList}}" 
+      wx:key='{{item.name}}'
+      bindtap='selectModel'
+      data-index='{{index}}'>
+      <text>{{item.name}}</text>
+      <text class='iconfont bf-choice' wx:if="{{item.isActive}}"></text>
+    </view>
+  </view>
+</view>

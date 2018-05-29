@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='inputbox'>
+    <input 
+      placeholder='请输入标题'
+      placeholder-class='placeClass'
+      maxlength='20'
+      value="{{title}}"
+      bindinput='bindInput'
+      focus='true'
+       />
+    <icon 
+      wx:if='{{title.length>0}}'
+      bindtap='clearInput'
+      type='clear' 
+      color='#e6e6e6' 
+      size='20'>
+      </icon>
+  </view>
+  <text class='textNum'>还可以输入{{20-title.length<0?0:20-title.length}}个字</text>
+
+  <view class='button'>确定</view>
+</view>
