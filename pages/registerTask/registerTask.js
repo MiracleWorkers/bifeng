@@ -56,5 +56,17 @@ Page({
     wx.navigateTo({
       url: '../taskTagSet/taskTagSet',
     })
+  },
+  // 页面跳转 -> 设置总奖励
+  _blankSetTotalReward: function () {
+    wx.navigateTo({
+      url: '../taskTotalRewardSet/taskTotalRewardSet',
+    })
+  },
+  // 页面跳转 -> 设置单次奖励
+  _blankSetSingleReward: function () {
+    wx.navigateTo({
+      url: '../taskSingleRewardSet/taskSingleRewardSet',
+    })
   }
 })

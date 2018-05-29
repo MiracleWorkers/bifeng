@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='inputbox'>
+    <input 
+      placeholder='请输入总奖励积分数量...'
+      placeholder-class='placeClass'
+      value="{{total}}"
+      type='number'
+      bindinput='bindInput'
+      focus='true'
+    />
+    <icon 
+      wx:if='{{total.length>0}}'
+      bindtap='clearInput'
+      type='clear' 
+      color='#e6e6e6' 
+      size='20'>
+    </icon>
+  </view>
+  <text class='textNum'>全部积分消耗完，任务会自动结束。</text>
+
+  <view class='button'>确定</view>
+</view>

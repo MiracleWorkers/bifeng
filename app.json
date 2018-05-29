@@ -17,7 +17,9 @@
     "pages/myComplyTask/myComplyTask",
     "pages/taskTitleSet/taskTitleSet",
     "pages/taskTypeSet/taskTypeSet",
-    "pages/taskTagSet/taskTagSet"
+    "pages/taskTagSet/taskTagSet",
+    "pages/taskTotalRewardSet/taskTotalRewardSet",
+    "pages/taskSingleRewardSet/taskSingleRewardSet"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

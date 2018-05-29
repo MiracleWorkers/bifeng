@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='inputbox'>
+    <input
+      placeholder='请输入单次奖励积分数量...'
+      placeholder-class='placeClass'
+      value="{{single}}"
+      type='number'
+      bindinput='bindInput'
+      focus='true'
+    />
+    <icon
+      wx:if='{{single.length>0}}'
+      bindtap='clearInput'
+      type='clear'
+      color='#e6e6e6'
+      size='20'>
+    </icon>
+  </view>
+  <text class='textNum'>单次奖励越高，越能激发服务者去执行哦~</text>
+
+  <view class='button'>确定</view>
+</view>

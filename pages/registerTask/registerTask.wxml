@@ -58,7 +58,7 @@
 
   <!-- two  -->
   <view class='two'>
-    <view class='module'>
+    <view class='module' bindtap='_blankSetTotalReward'>
       <view class='title'>任务总奖励</view>
       <view class='value-turn'>
         <text>20000 CSS</text>
@@ -66,7 +66,7 @@
       </view>
     </view>
 
-    <view class='module'>
+    <view class='module' bindtap='_blankSetSingleReward'>
       <view class='title'>单次完成奖励</view>
       <view class='value-turn'> 
         <text>20 CSS</text>
