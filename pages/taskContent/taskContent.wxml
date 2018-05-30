@@ -1,0 +1,23 @@
+<view class="container">
+  <textarea 
+    value="{{textarea}}"
+    bindinput='bindInput'
+    placeholder="输入正文..."
+    maxlength="-1" 
+    auto-focus="true" />
+  <view class='toolBar'>
+    <view 
+      wx:for="{{imgList}}"
+      wx:key="index"
+      class='model'>
+        {{item}}
+        <view class='close'>
+          <icon type="clear" size="20" color='red' />
+        </view>
+    </view>
+    <view class='addImg'>
+      <text class='iconfont bf-xiangji' />
+    </view>
+  </view>
+  <view class='button'>确认</view>
+</view>

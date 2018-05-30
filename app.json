@@ -21,7 +21,8 @@
     "pages/taskTotalRewardSet/taskTotalRewardSet",
     "pages/taskSingleRewardSet/taskSingleRewardSet",
     "pages/taskStatementSet/taskStatementSet",
-    "pages/taskLinkSet/taskLinkSet"
+    "pages/taskLinkSet/taskLinkSet",
+    "pages/taskContent/taskContent"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

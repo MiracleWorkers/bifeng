@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 18,
+			"current": 19,
 			"list": [
 				{
 					"id": -1,
@@ -147,7 +147,13 @@
 				{
 					"id": -1,
 					"name": "设置链接",
-					"pathName": "pages/taskLinkSet/taskLinkSet"
+					"pathName": "pages/taskLinkSet/taskLinkSet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置正文",
+					"pathName": "pages/taskContent/taskContent"
 				}
 			]
 		}

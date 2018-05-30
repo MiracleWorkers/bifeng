@@ -75,6 +75,12 @@ Page({
       url: '../taskStatementSet/taskStatementSet',
     })
   },
+  // 页面跳转 -> 正文
+  _blankTaskContent: function () {
+    wx.navigateTo({
+      url: '../taskContent/taskContent',
+    })
+  },
   // 页面跳转 -> 添加链接(评论，公众号)
   _blankSetLink: function () {
     wx.navigateTo({

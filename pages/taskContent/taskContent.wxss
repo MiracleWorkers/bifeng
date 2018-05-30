@@ -85,30 +85,61 @@
 .bf-quwei:before {
   content: "\e7e7"; }
 
-.container:before {
-  content: "";
-  display: block;
-  width: 750rpx;
-  height: 30rpx;
-  background-color: #f5f5f5; }
-
-.container .typeSelectBox {
-  width: 750rpx;
-  height: auto;
-  background: #fff; }
-  .container .typeSelectBox .model {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80rpx;
-    font-size: 34rpx;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container:before {
+    content: "";
+    display: block;
+    width: 750rpx;
+    height: 60rpx;
+    background-color: #f5f5f5; }
+  .container textarea {
+    width: 690rpx;
+    height: 450rpx;
+    font-size: 28rpx;
     color: #2c2c2c;
-    border-bottom: 1rpx solid #e6e6e6; }
-    .container .typeSelectBox .model:active {
-      background-color: #e6e6e6; }
-    .container .typeSelectBox .model text {
-      padding: 0 30rpx; }
-    .container .typeSelectBox .model .iconfont {
-      color: #e27b10;
-      font-size: 40rpx; }
+    background: #fff;
+    outline: 15px solid #fff; }
+  .container .toolBar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 690rpx;
+    height: auto;
+    margin-top: 80rpx;
+    background-color: #fff;
+    outline: 15px solid #fff; }
+    .container .toolBar .model, .container .toolBar .addImg {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100rpx;
+      height: 100rpx;
+      background-color: #eee;
+      margin-left: 30rpx;
+      margin-top: 20rpx; }
+      .container .toolBar .model:nth-child(5n+1), .container .toolBar .addImg:nth-child(5n+1) {
+        margin-left: 0; }
+      .container .toolBar .model:nth-child(-n+5), .container .toolBar .addImg:nth-child(-n+5) {
+        margin-top: 0; }
+      .container .toolBar .model .close, .container .toolBar .addImg .close {
+        position: absolute;
+        top: -10rpx;
+        right: -10rpx; }
+    .container .toolBar .addImg .iconfont {
+      font-size: 46rpx;
+      color: #bfbfbf; }
+  .container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 640rpx;
+    height: 80rpx;
+    margin: 70rpx auto;
+    background-color: #e27b10;
+    color: #fff;
+    font-size: 34rpx; }
+    .container .button:active {
+      opacity: 0.8; }

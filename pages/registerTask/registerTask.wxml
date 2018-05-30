@@ -110,7 +110,7 @@
   <view class='subTitle'>不验收，所有任务都合格</view>
 
   <!-- 正文  -->
-  <view class='module taskContent'>
+  <view class='module taskContent' bindtap='_blankTaskContent'>
     <view class='title'>正文</view>
       <view class='value-turn'>
         <text>好好干，以后这类任务还会发拉开距离看见了看见了看见了看见了</text>
