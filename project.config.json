@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 19,
+			"current": 21,
 			"list": [
 				{
 					"id": -1,
@@ -153,7 +153,19 @@
 				{
 					"id": -1,
 					"name": "设置正文",
-					"pathName": "pages/taskContent/taskContent"
+					"pathName": "pages/taskContent/taskContent",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "任务详情页",
+					"pathName": "pages/taskDetails/taskDetails",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "任务提交",
+					"pathName": "pages/taskSubmit/taskSubmit"
 				}
 			]
 		}

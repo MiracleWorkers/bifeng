@@ -1,0 +1,131 @@
+@import "../../assets/base.scss";
+
+.container{
+  padding-bottom: 140rpx;
+}
+
+.topImage{
+  width: 750rpx;
+}
+
+.taskInfo{
+  width: 750rpx;
+  padding: 10rpx 0 20rpx;
+  background-color: #fff;
+  .title{
+    color: $titleColor;
+    font-size: 32rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    font-weight: bold;
+  }
+  .smallText{
+    color: $subTitleColor;
+    font-size: 24rpx;
+    margin-top: 20rpx;
+    padding-left: 20rpx;
+    text{
+      margin-right: 14rpx;
+    }
+    .tags{
+      margin-top: 10rpx;
+      .tag{
+        display: inline-block;
+        padding: 4rpx 10rpx;
+        background-color: $borderColor;
+        margin-right: 20rpx;
+        font-size: 22rpx;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// 正文
+.content{
+  border-top: 1rpx solid $borderColor;
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+  line-height: 1.68;
+  color: $subTitleColor;
+  text-indent: 2em;
+}
+
+// 图片列表
+.imgList{
+  display: flex;
+  justify-content: center;
+  width: 750rpx;
+  padding-bottom: 40rpx;
+  background-color: #fff;
+  image{
+    width: 690rpx;
+  }
+}
+
+// 任务说明
+.taskItem{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  .title{
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+    padding: 30rpx 0 10rpx;
+    &:before{
+      content: "";
+      display: block;
+      width: 10rpx;
+      height: 50rpx;
+      margin-right: 10rpx;
+      background-color: $themeColor;
+    }
+  }
+  .itemContent{
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    color: $infoColor;
+    text{
+      margin-top: 6rpx;
+      padding-left: 20rpx;
+    }
+    .warn{
+      color: $themeColor;
+    }
+    .bold{
+      padding-left: 0;
+      font-weight: bold;
+      color: $themeColor;
+    }
+    image{
+      display: block;
+      width: 520rpx;
+      margin: 20rpx auto;
+    }
+  }
+}
+
+// 保存二维码
+.saveCodeImage{
+  padding: 40rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  image{
+    width: 320rpx;
+  }
+
+  text{
+    font-size: 32rpx;
+    color: $titleColor;
+    margin-top: 20rpx;
+  }
+}
+
+
+// 底部栏-- 转发任务
+@import "../../templates/taskBottomButton_forward/style.scss";

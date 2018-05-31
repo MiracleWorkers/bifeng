@@ -47,6 +47,9 @@
       &:nth-child(-n+5){
         margin-top: 0;
       }
+      image{
+        height: 100%;
+      }
       .close{
         position: absolute;
         top: -10rpx;

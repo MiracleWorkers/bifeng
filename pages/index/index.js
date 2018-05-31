@@ -94,7 +94,10 @@ Page({
     const {path,title} = e.currentTarget.dataset.item;
     wx.navigateTo({url: path})
   },
-
+  _blankTaskDetails:function(){
+    // wx.navigateTo({ url: "../taskDetails/taskDetails" })
+    wx.navigateTo({ url: "../taskSubmit/taskSubmit" })
+  },
   // 获取用户信息
   getUserInfo: function (e) {
     app.globalData.userInfo = e.detail.userInfo

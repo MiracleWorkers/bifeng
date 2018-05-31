@@ -28,7 +28,7 @@
   </view>
 
   <!-- 通知模块 -->
-  <view class='notification-box'>
+  <view class='notification-box' bindtap='_blankTaskDetails'>
     <image class='avater' src="../../assets/img/aver.jpeg"></image>
     <view class='notification-text'>
       <view class='noti-info'>

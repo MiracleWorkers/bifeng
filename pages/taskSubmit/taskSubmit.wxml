@@ -1,0 +1,32 @@
+<view class="container">
+  <view class='warn'>
+    系统将根据您上传任务截图的数量来计算您的任务完成情况奖励会在雇主完成验收之后打到您的账户上。
+  </view>
+  <view class='taskTell'>
+    <view class='title'>任务说明(选填)</view>
+    <textarea value="{{content}}" bindinput="bindInput" placeholder='请输入...' maxlength="200" />
+    <icon bindtap='clearInput' color="#eee" size="22" type="clear" />
+    <view class='blance'>
+      还可以输入{{200-content.length
+      <0?0:200-content.length}}个字 </view>
+    </view>
+
+    <view class='imgList'>
+      <view class='title'>任务截图(必填)</view>
+      <view class='list'>
+        <view wx:for="{{imgList}}" wx:key="index" class='model'>
+          <image mode='aspectFill' src='../../assets/img/weChat2.jpg' />
+          <view class='close'>
+            <icon type="clear" size="20" color='red' />
+          </view>
+        </view>
+        <view class='addImg'>
+          <text class='iconfont bf-xiangji' />
+          <text class="addText">添加任务截图</text>
+        </view>
+      </view>
+      <view class='blance'>已上传{{imgList.length}}张</view>
+    </view>
+
+    <view class='button'>确认</view>
+  </view>

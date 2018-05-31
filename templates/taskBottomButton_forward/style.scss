@@ -1,0 +1,37 @@
+@import "../../assets/base.scss";
+
+.bottom-button{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,.6);
+  .share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300rpx;
+    height: 100%;
+    background-color: #ecf6ff;
+    color: #048efa;
+    font-size: 30rpx;
+    &:active{
+      opacity: 0.8;
+    }
+  }
+  .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450rpx;
+    height: 100%;
+    background-color: $themeColor;
+    color: #fff;
+    &:active{
+      opacity: 0.8;
+    }
+  }
+}

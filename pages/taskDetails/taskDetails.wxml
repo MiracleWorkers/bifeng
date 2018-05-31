@@ -1,0 +1,69 @@
+<view class="container">
+  <!-- 头图 -->
+  <image class='topImage' mode="widthFix" src="../../assets/img/weChat2.jpg" />
+
+  <!-- 标题栏 -->
+  <view class='taskInfo'>
+    <view class='title'>火币袁煜明：我们现在处于区块链经济的1776年水电费水电费</view>
+    <view class='smallText'>
+      <text>火币网</text>
+      <text>2018.05.12 13:50</text>
+      <view class='tags'>
+        <text class='tag'>火币啊啊啊</text>
+        <text class='tag'>区块链啊啊</text>
+        <text class='tag'>经济看世纪</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 正文 -->
+  <view class='content'>
+    4月10日下午，火币区块链应用研究院袁煜明院长参加宾大沃顿中国中心举行的区块链技术应用与创新论坛，发表演讲《基于供给的区块链商业体系设计》，演讲中围绕供给建立了区块链商业体系     设计的框架，提出10大原则，并详细梳理了通证怎么来（0-2级体系10种获取方式）、通证怎么用（5种低阶权利和7种高阶权利）。以下是整理的演讲全文。
+  </view>
+  <view class='imgList'>
+    <image mode="widthFix" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" />
+  </view>
+
+  <!-- 任务说明 -->
+  <view class='taskItem'>
+    <view class='title'>任务简介</view>
+    <view class='itemContent'>
+      <text>把这个页面转发给您的微信群。</text>
+      <text>任务奖励会在雇主验收后统一发放。</text>
+      <text class='warn'>一个群重复转发、撤回消息都将导致任务无效。</text>
+    </view>
+
+    <view class='title'>奖励说明</view>
+    <view class='itemContent'>
+      <text>每转发到1个微信群： +150CSS </text>
+      <text>任务总积分：1000CSS</text>
+      <text>目前已消耗：250CSS（全部积分消耗完，任务自动结束）</text>
+      <text>赏金剩余：<text class='bold'>75%</text></text>
+    </view>
+
+    <view class='title'>任务时间</view>
+    <view class='itemContent'>
+      <text>开始时间：2018年5月12号 16:00</text>
+      <text>结束时间：2018年5月18号 16:00</text>
+    </view>
+
+    <view class='title'>雇主叮嘱</view>
+    <view class='itemContent'>
+      <text>多多转发，多多转发</text>
+    </view>
+
+    <view class='title'>操作步骤</view>
+    <view class='itemContent'>
+      <image mode="widthFix" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" />
+    </view>
+  </view>
+
+  <!-- 点击保存二维码 -->
+  <view class='saveCodeImage'>
+    <image mode="widthFix" src='../../assets/img/aver.jpeg' />
+    <text>点击保存二维码</text>
+  </view>
+
+  <!-- 底部栏 -->
+  <include src="../../templates/taskBottomButton_forward/index.wxml" />
+</view>

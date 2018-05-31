@@ -1,0 +1,190 @@
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.container {
+  padding-bottom: 140rpx; }
+
+.topImage {
+  width: 750rpx; }
+
+.taskInfo {
+  width: 750rpx;
+  padding: 10rpx 0 20rpx;
+  background-color: #fff; }
+  .taskInfo .title {
+    color: #2c2c2c;
+    font-size: 32rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    font-weight: bold; }
+  .taskInfo .smallText {
+    color: #515151;
+    font-size: 24rpx;
+    margin-top: 20rpx;
+    padding-left: 20rpx; }
+    .taskInfo .smallText text {
+      margin-right: 14rpx; }
+    .taskInfo .smallText .tags {
+      margin-top: 10rpx; }
+      .taskInfo .smallText .tags .tag {
+        display: inline-block;
+        padding: 4rpx 10rpx;
+        background-color: #e6e6e6;
+        margin-right: 20rpx;
+        font-size: 22rpx;
+        vertical-align: middle; }
+
+.content {
+  border-top: 1rpx solid #e6e6e6;
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+  line-height: 1.68;
+  color: #515151;
+  text-indent: 2em; }
+
+.imgList {
+  display: flex;
+  justify-content: center;
+  width: 750rpx;
+  padding-bottom: 40rpx;
+  background-color: #fff; }
+  .imgList image {
+    width: 690rpx; }
+
+.taskItem {
+  padding: 20rpx 30rpx;
+  background-color: #fff; }
+  .taskItem .title {
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+    padding: 30rpx 0 10rpx; }
+    .taskItem .title:before {
+      content: "";
+      display: block;
+      width: 10rpx;
+      height: 50rpx;
+      margin-right: 10rpx;
+      background-color: #e27b10; }
+  .taskItem .itemContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    color: #bfbfbf; }
+    .taskItem .itemContent text {
+      margin-top: 6rpx;
+      padding-left: 20rpx; }
+    .taskItem .itemContent .warn {
+      color: #e27b10; }
+    .taskItem .itemContent .bold {
+      padding-left: 0;
+      font-weight: bold;
+      color: #e27b10; }
+    .taskItem .itemContent image {
+      display: block;
+      width: 520rpx;
+      margin: 20rpx auto; }
+
+.saveCodeImage {
+  padding: 40rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .saveCodeImage image {
+    width: 320rpx; }
+  .saveCodeImage text {
+    font-size: 32rpx;
+    color: #2c2c2c;
+    margin-top: 20rpx; }
+
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.bottom-button {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.6); }
+  .bottom-button .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300rpx;
+    height: 100%;
+    background-color: #ecf6ff;
+    color: #048efa;
+    font-size: 30rpx; }
+    .bottom-button .share:active {
+      opacity: 0.8; }
+  .bottom-button .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450rpx;
+    height: 100%;
+    background-color: #e27b10;
+    color: #fff; }
+    .bottom-button .submit:active {
+      opacity: 0.8; }

@@ -22,7 +22,9 @@
     "pages/taskSingleRewardSet/taskSingleRewardSet",
     "pages/taskStatementSet/taskStatementSet",
     "pages/taskLinkSet/taskLinkSet",
-    "pages/taskContent/taskContent"
+    "pages/taskContent/taskContent",
+    "pages/taskDetails/taskDetails",
+    "pages/taskSubmit/taskSubmit"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

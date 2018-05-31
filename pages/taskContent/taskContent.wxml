@@ -10,7 +10,7 @@
       wx:for="{{imgList}}"
       wx:key="index"
       class='model'>
-        {{item}}
+        <image mode='aspectFill' src='../../assets/img/weChat2.jpg' />
         <view class='close'>
           <icon type="clear" size="20" color='red' />
         </view>

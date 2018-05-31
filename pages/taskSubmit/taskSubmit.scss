@@ -1,0 +1,136 @@
+@import "../../assets/base.scss";
+@import "../../assets/font/iconfont.wxss";
+
+.container{
+  padding-bottom: 60rpx;
+}
+
+.warn {
+  padding: 20rpx 40rpx;
+  font-size: 28rpx;
+  color: $infoColor;
+}
+
+// 任务说明
+.taskTell {
+  position: relative;
+  width: 750rpx;
+  background-color: #fff;
+  .title {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    height: 80rpx;
+    padding-left: 30rpx;
+    font-size: 32rpx;
+    color: $titleColor;
+  }
+  textarea {
+    width: 660rpx;
+    height: 320rpx;
+    padding: 20rpx 0;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    color: $titleColor;
+  }
+  .blance {
+    background-color: #f5f5f5;
+    text-align: right;
+    padding-right: 30rpx;
+    padding-top: 20rpx;
+    font-size: 28rpx;
+    color: $infoColor;
+  }
+  icon {
+    position: absolute;
+    top: 100rpx;
+    right: 20rpx;
+  }
+}
+
+// 任务截图
+.imgList{
+  margin-top: 20rpx;
+  background-color: #fff;
+  .title{
+    display: flex;
+    align-items: center;
+    height: 80rpx;
+    padding-left: 30rpx;
+    font-size: 32rpx;
+    color: $titleColor;
+    background-color: #f5f5f5;
+  }
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    width:690rpx;
+    height: auto;
+    margin-left: 30rpx;
+    padding: 30rpx 0;
+    background-color: #fff;
+
+    .model{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150rpx;
+      height: 150rpx;
+      background-color: #eee;
+      margin-left: 30rpx;
+      margin-top: 20rpx;
+      &:nth-child(4n+1){
+        margin-left: 0;
+      }
+      &:nth-child(-n+4){
+        margin-top: 0;
+      }
+      image{
+        height: 100%;
+      }
+      .close{
+        position: absolute;
+        top: -10rpx;
+        right: -10rpx;
+      }
+    }
+    .addImg{
+      @extend .model;
+      flex-direction: column;
+      .iconfont{
+        font-size: 46rpx;
+        color: $infoColor;
+      }
+      .addText{
+        font-size: 18rpx;
+        color: $infoColor;
+        margin-top: 10rpx;
+      }
+    }
+  }
+
+  .blance{
+    background-color: #f5f5f5;
+    text-align: right;
+    padding-right: 30rpx;
+    padding-top: 20rpx;
+    font-size: 28rpx;
+    color: $infoColor;
+  }
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 640rpx;
+  height: 80rpx;
+  margin: 70rpx auto;
+  background-color: $themeColor;
+  color: #fff;
+  font-size: $titleSize;
+  &:active{
+    opacity: 0.8;
+  }
+}
