@@ -1,0 +1,95 @@
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.bottomLineModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 200rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #515151; }
+  .bottomLineModel::before {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-right: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+  .bottomLineModel::after {
+    content: "";
+    display: inline-block;
+    width: 200rpx;
+    height: 2rpx;
+    margin-left: 8rpx;
+    background: #e6e6e6;
+    vertical-align: middle; }
+
+.popUp_assess {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .popUp_assess .content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 600rpx;
+    padding: 30rpx 20rpx;
+    background: #fff; }
+    .popUp_assess .content .title {
+      font-size: 26rpx;
+      color: #2c2c2c;
+      height: 60rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2rpx solid #e6e6e6; }
+    .popUp_assess .content .tag-list {
+      width: 520rpx;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .popUp_assess .content .tag-list .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220rpx;
+        height: 60rpx;
+        font-size: 30rpx;
+        color: #515151;
+        margin-top: 16rpx;
+        border: 1rpx solid #e6e6e6; }
+      .popUp_assess .content .tag-list .active {
+        background-color: #e27b10;
+        color: #fff;
+        border: 0; }
+    .popUp_assess .content .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40rpx; }
+      .popUp_assess .content .buttons .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160rpx;
+        height: 70rpx;
+        font-size: 34rpx;
+        color: #2c2c2c;
+        border: 1rpx solid #e6e6e6; }
+        .popUp_assess .content .buttons .button:active {
+          background-color: #e6e6e6; }
+        .popUp_assess .content .buttons .button:last-child {
+          background-color: #e27b10;
+          color: #fff;
+          border: 0; }
+          .popUp_assess .content .buttons .button:last-child:active {
+            opacity: 0.8; }

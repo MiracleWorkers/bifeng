@@ -1,0 +1,156 @@
+@import "../../assets/base.scss";
+@import "../../assets/font/iconfont.wxss";
+
+.container {
+  position: relative;
+  padding-bottom: 80rpx;
+}
+
+.warn {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 40rpx;
+  font-size: 28rpx;
+  color: $subTitleColor;
+  .userInfo {
+    margin-top: 30rpx;
+    display: flex;
+    align-items: center;
+    image {
+      width: 100rpx;
+      border-radius: 50%;
+    }
+    .info {
+      width: 500rpx;
+      margin-left: 30rpx;
+      .name {
+        @extend .singleLine;
+        color: $titleColor;
+      }
+      .star {
+        display: flex;
+        margin-top: 20rpx;
+        .iconfont {
+          margin-left: 6rpx;
+          color: $infoColor;
+          font-size: 36rpx;
+          &:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 任务说明
+.taskTell {
+  position: relative;
+  width: 750rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  .title {
+    display: flex;
+    align-items: center;
+    height: 60rpx;
+    padding-left: 30rpx;
+    font-size: 32rpx;
+    color: $titleColor;
+    font-weight: bold;
+  }
+  .content {
+    padding: 20rpx 30rpx;
+    font-size: $subTitleSize;
+    color: $infoColor;
+  }
+}
+
+// 任务截图
+.imgList {
+  margin-top: 20rpx;
+  background-color: #fff;
+  .title {
+    display: flex;
+    align-items: center;
+    height: 60rpx;
+    padding-left: 30rpx;
+    font-size: 32rpx;
+    color: $titleColor;
+    font-weight: bold;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 690rpx;
+    height: auto;
+    margin-left: 30rpx;
+    padding: 30rpx 0;
+    background-color: #fff;
+
+    .model {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150rpx;
+      height: 150rpx;
+      background-color: #eee;
+      margin-left: 30rpx;
+      margin-top: 20rpx;
+      &:nth-child(4n + 1) {
+        margin-left: 0;
+      }
+      &:nth-child(-n + 4) {
+        margin-top: 0;
+      }
+      image {
+        height: 100%;
+      }
+    }
+  }
+  .reward {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30rpx;
+    font-size: 28rpx;
+    color: $subTitleColor;
+    background-color: #f5f5f5;
+    text{
+      color: $themeColor;
+    }
+  }
+}
+
+// 评价任务
+.taskAssess{
+  padding: 0 30rpx;
+  height: 90rpx;
+  background-color: #fff;
+  margin-top: 40rpx;
+  font-size: $titleSize;
+  &:active{
+    background-color: $borderColor;
+  }
+  .model{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    .left{
+      width: 50%;
+    }
+    .right{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 50%;
+      color: $infoColor;
+      text{
+        margin-right: 8rpx;
+      }
+      image{
+        width: 40rpx;
+      }
+    }
+  }
+}

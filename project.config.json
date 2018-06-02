@@ -171,7 +171,14 @@
 				{
 					"id": -1,
 					"name": "我发布的任务",
-					"pathName": "pages/viewMyPublicTask/viewMyPublicTask"
+					"pathName": "pages/viewMyPublicTask/viewMyPublicTask",
+					"query": ""
+				},
+				{
+					"id": 23,
+					"name": "我完成的的任务",
+					"pathName": "pages/viewMyComplyTask/viewMyComplyTask",
+					"query": ""
 				}
 			]
 		}

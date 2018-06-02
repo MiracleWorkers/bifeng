@@ -1,0 +1,19 @@
+<view class="popUp_assess" wx:if="{{visible}}">
+  <view class='content'>
+    <view class='title'>根据您的评价，以后尽量给您推荐更适合的任务</view>
+    <view class='tag-list'>
+      <view 
+        wx:for="{{tagList}}"
+        wx:key="index"
+        bindtap='selectTag'
+        data-index="{{index}}"
+        class="tag {{item.isActive?'active':''}}">
+        {{item.name}}
+      </view>
+    </view>
+    <view class='buttons'>
+      <view class='button' bindtap='cancel'>取消</view>
+      <view class='button'>确认</view>
+    </view>
+  </view>
+</view>

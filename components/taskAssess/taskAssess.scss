@@ -1,0 +1,77 @@
+@import "../../assets/base.scss";
+
+.popUp_assess{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  .content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    width: 600rpx;
+    padding: 30rpx 20rpx;
+    background: #fff;
+    .title{
+      font-size: 26rpx;
+      color: $titleColor;
+      height: 60rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2rpx solid $borderColor;
+    }
+    .tag-list{
+      width: 520rpx;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .tag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220rpx;
+        height: 60rpx;
+        font-size: 30rpx;
+        color: $subTitleColor;
+        margin-top: 16rpx;
+        border: 1rpx solid $borderColor;
+      }
+      .active{
+        background-color: $themeColor;
+        color: #fff;
+        border: 0;
+      }
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40rpx;
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160rpx;
+        height: 70rpx;
+        font-size: $titleSize;
+        color: $titleColor;
+        border: 1rpx solid $borderColor;
+        &:active{
+          background-color: $borderColor;
+        }
+        &:last-child{
+          background-color: $themeColor;
+          color: #fff;
+          border: 0;
+          &:active{
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

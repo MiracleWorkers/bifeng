@@ -1,0 +1,53 @@
+<view class="container">
+  <view class='warn'>
+    <text>该任务雇主尚未验收，验收通过后您将获得奖励。</text>
+    <text>2018年05月19日 16:30雇主仍未验收，系统将自动通过验收。</text>
+    <view class='userInfo'>
+      <image mode='widthFix' src='../../assets/img/aver.jpeg' />
+      <view class='info'>
+        <view class='name'>张三李四王</view>
+        <view class='star'>
+          <view 
+          wx:for="{{[1,2,3,4,5]}}" 
+          wx:key="index" 
+          class="iconfont {{starNum>=item?'bf-wuxing':'bf-wuxing1'}}" 
+          />
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 任务说明 -->
+  <view class='taskTell'>
+    <view class='title'>任务说明</view>
+    <view class='content'>
+      我干活您放心！每张截图都杠杠滴~~~我干活您放心！每张截图都杠杠滴~~~我干活您放心！每张截图都杠杠滴~~~我干活您放心！每张截图都杠杠滴~~~我干活您放心！每张截图都杠杠滴~~~我干活您放心！每张截图都杠杠滴~~~我干活您放心！每张截图都杠杠滴~~~
+    </view>
+  </view>
+  <!-- 任务截图 -->
+  <view class='imgList'>
+    <view class='title'>任务截图</view>
+    <view class='list'>
+      <view wx:for="{{imgList}}" wx:key="index" class='model'>
+        <image mode='aspectFill' src='../../assets/img/weChat2.jpg' />
+      </view>
+    </view>
+    <view class='reward'>
+      共{{imgList.length}}张
+      共<text>300 CSS</text>
+    </view>
+  </view>
+
+  <!-- 评价任务 -->
+  <view class='taskAssess'>
+    <view class='model'>
+      <view class='left'>评价任务</view>
+      <view class='right'>
+        <text>未评价</text>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+  </view>
+
+  <!-- 评价弹窗组件 -->
+  <task-assess visible="{{true}}" />
+</view>

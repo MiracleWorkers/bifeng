@@ -97,7 +97,8 @@ Page({
   _blankTaskDetails:function(){
     // wx.navigateTo({ url: "../taskDetails/taskDetails" })
     // wx.navigateTo({ url: "../taskSubmit/taskSubmit" })
-    wx.navigateTo({ url: "../viewMyPublicTask/viewMyPublicTask" })
+    // wx.navigateTo({ url: "../viewMyPublicTask/viewMyPublicTask" })
+    wx.navigateTo({ url: "../viewMyComplyTask/viewMyComplyTask" })
   },
   // 获取用户信息
   getUserInfo: function (e) {

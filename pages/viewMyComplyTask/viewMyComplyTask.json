@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "task-assess": "../../components/taskAssess/taskAssess"
+  }
+}
