@@ -1,0 +1,19 @@
+<view class='popUp_groupCheck' wx:if="{{visible}}">
+  <view class='content'>
+    <view class='text'>
+      <text>1、选择验收通过，服务商们将得到奖励。</text>
+      <text>2、选择验收不通过请简述原因，我们竭诚维护您的利益。</text>
+    </view>
+    <view class='buttons'>
+      <view class='button' bindtap='noCheck'>验证不通过</view>
+      <view class='button'>验证通过</view>
+    </view>
+    <view class='reason' wx:if="{{!isAgree}}">
+      <textarea value="{{reason}}" bindinput='textareaChange' placeholder='请简述不通过的原因' />
+    </view>
+    <view class='bottomButton' wx:if="{{!isAgree}}">
+      <view class='button' bindtap='cancel'>取消</view>
+      <view class='button'>确认</view>
+    </view>
+  </view>
+</view>

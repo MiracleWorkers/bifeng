@@ -24,7 +24,8 @@
     "pages/taskLinkSet/taskLinkSet",
     "pages/taskContent/taskContent",
     "pages/taskDetails/taskDetails",
-    "pages/taskSubmit/taskSubmit"
+    "pages/taskSubmit/taskSubmit",
+    "pages/viewMyPublicTask/viewMyPublicTask"
   ],
   "window": {
     "navigationBarBackgroundColor": "#E27B10",

@@ -1,0 +1,125 @@
+<view class="container">
+  <!-- 编辑内容 -->
+  <view class='editContent'>
+    <view class='model'>
+      <view class='left'>编辑内容</view>
+      <view class='right'>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+  </view>
+
+  <!-- 置顶 -->
+  <view class='toTop'>
+    <view class='model noActive'>
+      <view class='left'>置顶</view>
+      <view class='right'>
+        <switch color='#e27b10' checked='{{toTop}}' bindchange="switchChangeTop" />
+      </view>
+    </view>
+    <view class='smallText'>
+      置顶后，您的任务将会出现在同类型任务的顶部，但会产生每天1000 CSS的费用，费用不足时自动取消置顶。
+    </view>
+  </view>
+
+  <!-- 加精 -->
+  <view class='getBest'>
+    <view class='model noActive'>
+      <view class='left'>加精</view>
+      <view class='right'>
+        <switch color='#e27b10' checked='{{getBest}}' bindchange="switchChangeBest" />
+      </view>
+    </view>
+    <view class='smallText'>
+      加精后，您的任务将会出现在首页推荐中，但会产生每天1000 CSS的费用，费用不足时自动取消加精。
+    </view>
+  </view>
+
+  <!-- 进行中的元素 -->
+  <!-- 顶部说明文字 -->
+  <view class='topText'>
+    已有3位服务商累计执行11次任务，预计将消耗任务奖励
+    <text>1100</text> CSS。 该任务总积分为2000CSS，系统会将剩余的奖励积分返还到您的账户中。
+  </view>
+
+  <!-- 提前结束 -->
+  <view class='end'>
+    <view class='model'>
+      <view class='left'>提前结束</view>
+      <view class='right'>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 已结束中元素 -->
+  <!-- 批量验收任务 -->
+  <view class='groupCheck'>
+    <view class='model'>
+      <view class='left'>批量验收任务</view>
+      <view class='right'>
+        <text>未验收</text>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+    <view class='infoText'>
+      <text>该任务您还尚未验收，验收通过后服务商们将收到奖励 </text>
+      <text>2018年05月19日16：30前仍不验收，系统将默认替您通过验收。</text>
+    </view>
+  </view>
+  <!-- 再发一次 -->
+  <view class='sendAgain'>
+    <view class='model'>
+      <view class='left'>再发一次</view>
+      <view class='right'>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+  </view>
+
+  <!-- 任务执行纪律 -->
+  <view class='taskRecord'>
+    <view class='info'>任务执行记录</view>
+    <view class='model'>
+      <view class='left'>
+        <text class='name'>张三绿山咖啡的水电费 水电费</text>
+        <text class='state'>提价了5次任务</text>
+      </view>
+      <view class='right'>
+        <text>未验收</text>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+    <view class='model'>
+      <view class='left'>
+        <text class='name'>张三</text>
+        <text class='state'>已通过认证</text>
+      </view>
+      <view class='right'>
+        <text>提交了100次任务</text>
+        <image mode='widthFix' src='../../assets/img/turnRight.png' />
+      </view>
+    </view>
+  </view>
+
+  <!-- 评价此次任务 -->
+  <view class='taskAssess'>
+    <view class='model'>
+      <view class='left'>评价此次结果</view>
+      <view class='right'>
+        <text class="iconfont {{starNum>=1?'bf-wuxing':'bf-wuxing1'}}" />
+        <text class="iconfont {{starNum>=2?'bf-wuxing':'bf-wuxing1'}}" />
+        <text class="iconfont {{starNum>=3?'bf-wuxing':'bf-wuxing1'}}" />
+        <text class="iconfont {{starNum>=4?'bf-wuxing':'bf-wuxing1'}}" />
+        <text class="iconfont {{starNum>=5?'bf-wuxing':'bf-wuxing1'}}" />
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 批量验收的弹窗 -->
+  <task-check visible="{{false}}" />
+  <!-- 星级评价 -->
+  <task-star visible="{{true}}" />
+</view>

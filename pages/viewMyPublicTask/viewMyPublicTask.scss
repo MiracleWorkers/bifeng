@@ -1,0 +1,183 @@
+@import "../../assets/base.scss";
+@import "../../assets/font/iconfont.wxss";
+
+.container {
+  position: relative;
+}
+// model模板
+.model {
+  width: 750rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  font-size: $titleSize;
+  color: $titleColor;
+  .left {
+    display: flex;
+    align-items: center;
+    width: 355rpx;
+    padding-left: 20rpx;
+    @extend .singleLine;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 355rpx;
+    padding-right: 20rpx;
+    image {
+      width: 40rpx;
+    }
+  }
+  &:active {
+    background-color: $borderColor;
+  }
+}
+// 点击不变色
+.noActive:active {
+  background-color: #fff;
+}
+// 编辑内容
+.editContent {
+  background-color: #fff;
+  &:before {
+    content: "";
+    display: block;
+    width: 750rpx;
+    height: 30rpx;
+    background-color: #f5f5f5;
+  }
+}
+
+// 置顶
+.toTop {
+  background-color: #fff;
+  margin-top: 50rpx;
+  .smallText {
+    font-size: 22rpx;
+    color: $infoColor;
+    padding: 20rpx 20rpx 0;
+    background-color: #f5f5f5;
+  }
+}
+
+// 加精
+.getBest {
+  background-color: #fff;
+  margin-top: 50rpx;
+  .smallText {
+    font-size: 22rpx;
+    color: $infoColor;
+    padding: 20rpx 20rpx 0;
+    background-color: #f5f5f5;
+  }
+}
+
+// 顶部说明文字
+.topText {
+  font-size: 22rpx;
+  color: $subTitleColor;
+  padding: 40rpx 20rpx;
+  background-color: #f5f5f5;
+  text {
+    font-weight: bold;
+  }
+}
+// 进行中
+.end {
+  background-color: #fff;
+}
+
+// 批量验收任务
+.groupCheck {
+  background-color: #fff;
+  &:before {
+    content: "";
+    display: block;
+    width: 750rpx;
+    height: 30rpx;
+    background-color: #f5f5f5;
+  }
+  .right > text {
+    margin-right: 10rpx;
+    color: $infoColor;
+    font-size: $subTitleSize;
+  }
+  .infoText {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+    font-size: 22rpx;
+    color: $subTitleColor;
+    background-color: #f5f5f5;
+  }
+}
+
+// 再发一次
+.sendAgain {
+  background-color: #fff;
+  &:before {
+    content: "";
+    display: block;
+    width: 750rpx;
+    height: 50rpx;
+    background-color: #f5f5f5;
+  }
+}
+
+// 任务执行记录
+.taskRecord {
+  background-color: #fff;
+  &:before {
+    content: "";
+    display: block;
+    width: 750rpx;
+    height: 80rpx;
+    background-color: #f5f5f5;
+  }
+
+  .info {
+    padding: 20rpx;
+    font-size: 30rpx;
+    color: $infoColor;
+    background-color: #f5f5f5;
+  }
+  .model {
+    border-bottom: 1rpx solid $borderColor;
+    .left > .name {
+      max-width: 180rpx;
+      font-size: 32rpx;
+      @extend .singleLine;
+    }
+    .left > .state {
+      font-size: 26rpx;
+      color: $infoColor;
+      margin-left: 10rpx;
+    }
+
+    .right > text {
+      margin-right: 10rpx;
+      color: $infoColor;
+      font-size: $subTitleSize;
+    }
+  }
+}
+
+// 评价此次结果
+.taskAssess {
+  background-color: #fff;
+  &:before {
+    content: "";
+    display: block;
+    width: 750rpx;
+    height: 30rpx;
+    background-color: #f5f5f5;
+  }
+  .right {
+    .iconfont {
+      font-size: 40rpx;
+      color: $infoColor;
+      margin-right: 5rpx;
+    }
+  }
+}

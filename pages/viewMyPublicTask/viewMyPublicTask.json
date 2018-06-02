@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "task-check": "../../components/taskCheck/taskCheck",
+    "task-star": "../../components/taskStar/taskStar"
+  }
+}

@@ -1,0 +1,17 @@
+<view class="taskStar" wx:if="{{visible}}">
+  <view class='content'>
+    <view class='stars'>
+      <view
+      wx:for="{{[1,2,3,4,5]}}" 
+      wx:key="index" 
+      bindtap='changeStar'
+      data-index="{{item}}"
+      class="iconfont {{starNum>=item?'bf-wuxing':'bf-wuxing1'}}" 
+      />
+    </view>
+    <view class='bottomButton'>
+      <view class='button' bindtap='cancel'>取消</view>
+      <view class='button'>确认</view>
+    </view>
+  </view>
+</view>

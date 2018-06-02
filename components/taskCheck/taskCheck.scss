@@ -1,0 +1,87 @@
+@import "../../assets/base.scss";
+
+// 验收弹窗
+.popUp_groupCheck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    width: 540rpx;
+    padding: 30rpx;
+    background-color: #fff;
+    .text {
+      display: flex;
+      flex-direction: column;
+      font-size: 28rpx;
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20rpx;
+      .button {
+        font-size: 28rpx;
+        padding: 6rpx 16rpx;
+        border: 1rpx solid $borderColor;
+        margin-left: 20rpx;
+        &:active {
+          background-color: $borderColor;
+        }
+        &:last-child {
+          background-color: $themeColor;
+          border: 0;
+          color: #fff;
+          &:active {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .reason {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 1rpx solid $borderColor;
+      margin-top: 20rpx;
+      padding: 20rpx 0;
+      textarea {
+        width: 480rpx;
+        font-size: 24rpx;
+        height: 120rpx;
+      }
+    }
+
+    .bottomButton {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30rpx;
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200rpx;
+        height: 60rpx;
+        border: 1rpx solid $borderColor;
+        font-size: 32rpx;
+        &:active {
+          background-color: $borderColor;
+        }
+        &:last-child {
+          background-color: $themeColor;
+          color: #fff;
+          border: 0;
+          &:active {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

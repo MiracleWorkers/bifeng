@@ -1,0 +1,57 @@
+@import "../../assets/base.scss";
+@import "../../assets/font/iconfont.wxss";
+
+.taskStar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    width: 540rpx;
+    padding: 30rpx;
+    background-color: #fff;
+
+    .stars{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bf-wuxing,.bf-wuxing1{
+        display: block;
+        font-size: 60rpx;
+        color: $infoColor;
+        margin-left: 10rpx;
+      }
+    }
+    .bottomButton {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40rpx;
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200rpx;
+        height: 60rpx;
+        border: 1rpx solid $borderColor;
+        font-size: 32rpx;
+        &:active {
+          background-color: $borderColor;
+        }
+        &:last-child {
+          background-color: $themeColor;
+          color: #fff;
+          border: 0;
+          &:active {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
