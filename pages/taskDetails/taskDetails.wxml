@@ -18,7 +18,7 @@
 
   <!-- 正文 -->
   <view class='content'>
-    4月10日下午，火币区块链应用研究院袁煜明院长参加宾大沃顿中国中心举行的区块链技术应用与创新论坛，发表演讲《基于供给的区块链商业体系设计》，演讲中围绕供给建立了区块链商业体系     设计的框架，提出10大原则，并详细梳理了通证怎么来（0-2级体系10种获取方式）、通证怎么用（5种低阶权利和7种高阶权利）。以下是整理的演讲全文。
+    4月10日下午，火币区块链应用研究院袁煜明院长参加宾大沃顿中国中心举行的区块链技术应用与创新论坛，发表演讲《基于供给的区块链商业体系设计》，演讲中围绕供给建立了区块链商业体系 设计的框架，提出10大原则，并详细梳理了通证怎么来（0-2级体系10种获取方式）、通证怎么用（5种低阶权利和7种高阶权利）。以下是整理的演讲全文。
   </view>
   <view class='imgList'>
     <image mode="widthFix" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" />
@@ -65,5 +65,16 @@
   </view>
 
   <!-- 底部栏 -->
-  <include src="../../templates/taskBottomButton_forward/index.wxml" />
+
+  <!-- 转发任务 -->
+  <!-- <include src="../../templates/taskBottomButton_forward/index.wxml" /> -->
+
+  <!-- 注册任务 -->
+   <!-- <include src="../../templates/taskBottomButton_signUp/index.wxml" />  -->
+
+  <!-- 评论任务 -->
+   <!-- <include src="../../templates/taskBottomButton_review/index.wxml" />  -->
+
+  <!-- 涨粉任务 -->
+  <include src="../../templates/taskBottomButton_popularity/index.wxml" /> 
 </view>

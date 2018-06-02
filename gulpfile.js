@@ -48,10 +48,10 @@ return gulp.src(config.components + '/**/*.scss')
 
 //监视
 gulp.task('watch', function(event) {
-  gulp.watch('pages/**/*.scss', ['pageScss']);
-  gulp.watch('components/**/*.scss', ['componentScss']);
-  gulp.watch('assets/**/*.scss', ['pageScss']);
-  gulp.watch('templates/**/*.scss', ['pageScss']);
+  gulp.watch('./pages/**/*.scss', ['pageScss']);
+  gulp.watch('./components/**/*.scss', ['componentScss']);
+  gulp.watch('./assets/**/*.scss', ['pageScss']);
+  gulp.watch('./templates/**/*.scss', ['pageScss']);
 });
 
 //开发

@@ -1,0 +1,5 @@
+<view class="bottom-button">
+  <view class='share'>分享赚1000CSS</view>
+  <view class='copy'>复制微信号</view>
+  <view class='link'>提交任务</view>
+</view>

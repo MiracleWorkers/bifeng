@@ -7,31 +7,41 @@
   left: 0;
   width: 750rpx;
   height: 90rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
   box-shadow: 0 2rpx 12rpx rgba(0,0,0,.6);
   .share{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300rpx;
-    height: 100%;
-    font-size: 30rpx;
+    width: 250rpx;
     color: $titleColor;
     background-color: #fff;
+    border-right: 2rpx solid $borderColor;
     &:active{
       background-color: $borderColor;
     }
   }
-  .submit{
+  .link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450rpx;
+    width: 250rpx;
     height: 100%;
     background-color: $themeColor;
     color: #fff;
     &:active{
       background-color: #f17e03;
+    }
+  }
+  .copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250rpx;
+    background-color: #fff;
+    color: $titleColor;
+    &:active{
+      background-color: $borderColor;
     }
   }
 }

@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 21,
+			"current": 20,
 			"list": [
 				{
 					"id": -1,
@@ -165,7 +165,8 @@
 				{
 					"id": -1,
 					"name": "任务提交",
-					"pathName": "pages/taskSubmit/taskSubmit"
+					"pathName": "pages/taskSubmit/taskSubmit",
+					"query": ""
 				}
 			]
 		}
