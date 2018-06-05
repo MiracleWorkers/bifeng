@@ -1,5 +1,5 @@
-<view class="bottom-button">
-  <view class='share'>分享赚1000CSS</view>
+<view class="bottom-button-signUp">
+  <button plain="true" class='share'>分享赚1000CSS</button>
   <view class='copy'>复制链接地址</view>
   <view class='link'>任务链接</view>
 </view>

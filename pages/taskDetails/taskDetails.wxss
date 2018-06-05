@@ -158,7 +158,7 @@
     background: #e6e6e6;
     vertical-align: middle; }
 
-.bottom-button {
+.bottom-button-forward {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -166,19 +166,24 @@
   width: 750rpx;
   height: 90rpx;
   font-size: 32rpx;
-  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.6); }
-  .bottom-button .share {
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.6);
+  background-color: #fff; }
+  .bottom-button-forward .share {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300rpx;
-    height: 100%;
-    font-size: 30rpx;
     color: #2c2c2c;
-    background-color: #fff; }
-    .bottom-button .share:active {
+    font-size: 30rpx;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #fff;
+    border-right: 2rpx solid #e6e6e6; }
+    .bottom-button-forward .share:active {
       background-color: #e6e6e6; }
-  .bottom-button .submit {
+  .bottom-button-forward .submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +191,7 @@
     height: 100%;
     background-color: #e27b10;
     color: #fff; }
-    .bottom-button .submit:active {
+    .bottom-button-forward .submit:active {
       background-color: #f17e03; }
 
 .singleLine {
@@ -220,7 +225,7 @@
     background: #e6e6e6;
     vertical-align: middle; }
 
-.bottom-button {
+.bottom-button-signUp {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -229,17 +234,22 @@
   height: 90rpx;
   font-size: 30rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.6); }
-  .bottom-button .share {
+  .bottom-button-signUp .share {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250rpx;
     color: #2c2c2c;
     background-color: #fff;
+    font-size: 26rpx;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
     border-right: 2rpx solid #e6e6e6; }
-    .bottom-button .share:active {
+    .bottom-button-signUp .share:active {
       background-color: #e6e6e6; }
-  .bottom-button .link {
+  .bottom-button-signUp .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,16 +257,16 @@
     height: 100%;
     background-color: #e27b10;
     color: #fff; }
-    .bottom-button .link:active {
+    .bottom-button-signUp .link:active {
       background-color: #f17e03; }
-  .bottom-button .copy {
+  .bottom-button-signUp .copy {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 250rpx;
     background-color: #fff;
     color: #2c2c2c; }
-    .bottom-button .copy:active {
+    .bottom-button-signUp .copy:active {
       background-color: #e6e6e6; }
 
 .singleLine {
@@ -290,7 +300,7 @@
     background: #e6e6e6;
     vertical-align: middle; }
 
-.bottom-button {
+.bottom-button-review {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -298,28 +308,33 @@
   width: 750rpx;
   height: 90rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.6); }
-  .bottom-button .share {
+  .bottom-button-review .share {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 230rpx;
-    font-size: 26rpx;
+    width: 250rpx;
     color: #2c2c2c;
-    background-color: #fff; }
-    .bottom-button .share:active {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
+    font-size: 26rpx;
+    background-color: #fff;
+    border-right: 2rpx solid #e6e6e6; }
+    .bottom-button-review .share:active {
       background-color: #e6e6e6; }
-  .bottom-button .link {
+  .bottom-button-review .link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160rpx;
+    width: 140rpx;
     height: 100%;
     font-size: 26rpx;
     background-color: #e27b10;
     color: #fff; }
-    .bottom-button .link:active {
+    .bottom-button-review .link:active {
       background-color: #f17e03; }
-  .bottom-button .copy {
+  .bottom-button-review .copy {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,9 +342,9 @@
     font-size: 26rpx;
     background-color: #fff;
     color: #2c2c2c; }
-    .bottom-button .copy:active {
+    .bottom-button-review .copy:active {
       background-color: #e6e6e6; }
-  .bottom-button .submit {
+  .bottom-button-review .submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +353,7 @@
     font-size: 30rpx;
     background-color: #e27b10;
     color: #fff; }
-    .bottom-button .submit:active {
+    .bottom-button-review .submit:active {
       background-color: #f17e03; }
 
 .singleLine {
@@ -372,7 +387,7 @@
     background: #e6e6e6;
     vertical-align: middle; }
 
-.bottom-button {
+.bottom-button-popularity {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -381,17 +396,22 @@
   height: 90rpx;
   font-size: 30rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.6); }
-  .bottom-button .share {
+  .bottom-button-popularity .share {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250rpx;
     color: #2c2c2c;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
+    font-size: 28rpx;
     background-color: #fff;
     border-right: 2rpx solid #e6e6e6; }
-    .bottom-button .share:active {
+    .bottom-button-popularity .share:active {
       background-color: #e6e6e6; }
-  .bottom-button .link {
+  .bottom-button-popularity .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,14 +419,14 @@
     height: 100%;
     background-color: #e27b10;
     color: #fff; }
-    .bottom-button .link:active {
+    .bottom-button-popularity .link:active {
       background-color: #f17e03; }
-  .bottom-button .copy {
+  .bottom-button-popularity .copy {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 250rpx;
     background-color: #fff;
     color: #2c2c2c; }
-    .bottom-button .copy:active {
+    .bottom-button-popularity .copy:active {
       background-color: #e6e6e6; }

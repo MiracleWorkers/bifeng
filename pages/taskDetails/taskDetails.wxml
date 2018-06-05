@@ -67,14 +67,14 @@
   <!-- 底部栏 -->
 
   <!-- 转发任务 -->
-  <!-- <include src="../../templates/taskBottomButton_forward/index.wxml" /> -->
+  <include src="../../templates/taskBottomButton_forward/index.wxml" />
 
   <!-- 注册任务 -->
-   <!-- <include src="../../templates/taskBottomButton_signUp/index.wxml" />  -->
+  <!-- <include src="../../templates/taskBottomButton_signUp/index.wxml" />      -->
 
   <!-- 评论任务 -->
-   <!-- <include src="../../templates/taskBottomButton_review/index.wxml" />  -->
+  <!-- <include src="../../templates/taskBottomButton_review/index.wxml" />      -->
 
   <!-- 涨粉任务 -->
-  <include src="../../templates/taskBottomButton_popularity/index.wxml" /> 
+  <!-- <include src="../../templates/taskBottomButton_popularity/index.wxml" /> -->
 </view>

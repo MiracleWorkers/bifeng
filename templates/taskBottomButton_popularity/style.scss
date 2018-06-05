@@ -1,6 +1,6 @@
 @import "../../assets/base.scss";
 
-.bottom-button{
+.bottom-button-popularity{
   display: flex;
   position: fixed;
   bottom: 0;
@@ -15,6 +15,11 @@
     justify-content: center;
     width: 250rpx;
     color: $titleColor;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
+    font-size: 28rpx;
     background-color: #fff;
     border-right: 2rpx solid $borderColor;
     &:active{

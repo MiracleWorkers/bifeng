@@ -1,6 +1,6 @@
 @import "../../assets/base.scss";
 
-.bottom-button{
+.bottom-button-signUp{
   display: flex;
   position: fixed;
   bottom: 0;
@@ -16,6 +16,11 @@
     width: 250rpx;
     color: $titleColor;
     background-color: #fff;
+    font-size: 26rpx;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
     border-right: 2rpx solid $borderColor;
     &:active{
       background-color: $borderColor;

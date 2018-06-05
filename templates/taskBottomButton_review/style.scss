@@ -1,6 +1,6 @@
 @import "../../assets/base.scss";
 
-.bottom-button{
+.bottom-button-review{
   display: flex;
   position: fixed;
   bottom: 0;
@@ -12,10 +12,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 230rpx;
-    font-size: 26rpx;
+    width: 250rpx;
     color: $titleColor;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    border: 0;
+    font-size: 26rpx;
     background-color: #fff;
+    border-right: 2rpx solid $borderColor;
     &:active{
       background-color: $borderColor;
     }
@@ -24,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160rpx;
+    width: 140rpx;
     height: 100%;
     font-size: 26rpx;
     background-color: $themeColor;

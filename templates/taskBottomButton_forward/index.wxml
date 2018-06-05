@@ -1,4 +1,4 @@
-<view class="bottom-button">
-  <view class='share'>分享赚1000CSS</view>
+<view class="bottom-button-forward">
+  <button plain="true" class='share'>分享赚1000CSS</button>
   <view class='submit'>提交任务</view>
 </view>

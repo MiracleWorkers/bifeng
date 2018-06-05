@@ -95,10 +95,10 @@ Page({
     wx.navigateTo({url: path})
   },
   _blankTaskDetails:function(){
-    // wx.navigateTo({ url: "../taskDetails/taskDetails" })
+    wx.navigateTo({ url: "../taskDetails/taskDetails" })
     // wx.navigateTo({ url: "../taskSubmit/taskSubmit" })
     // wx.navigateTo({ url: "../viewMyPublicTask/viewMyPublicTask" })
-    wx.navigateTo({ url: "../viewMyComplyTask/viewMyComplyTask" })
+    // wx.navigateTo({ url: "../viewMyComplyTask/viewMyComplyTask" })
   },
   // 获取用户信息
   getUserInfo: function (e) {
