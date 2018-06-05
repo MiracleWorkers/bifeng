@@ -4,7 +4,7 @@ Page({
 
   data: {
     // init：首次进入； provider： 服务商页面； master： 雇主页面
-    userPage: "provider",
+    userPage: "init",
     isSignIn: false,
     isShowBindPhone: false
   },

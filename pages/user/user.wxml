@@ -1,20 +1,24 @@
 <!-- 第一次进入 -->
 <view class="container initPage" wx:if="{{userPage==='init'}}">
   <text class='infoText'>请选择角色</text>
-  <view class='model'>
+  <button plain="true" class='model'>
     <view class='button'>
-      <view class='icon'></view>
+      <view class='icon'>
+        <text class='iconfont bf-fuwushang' />
+      </view>
       <text>我是雇主</text>
     </view>
     <view class='title'>雇主可以在币风平台发布众包任务</view>
-  </view>
-  <view class='model'>
+  </button>
+  <button plain="true" class='model'>
     <view class='button'>
-      <view class='icon'></view>
+      <view class='icon'>
+        <text class='iconfont bf-employee' />
+      </view>
       <text>我是服务商</text>
     </view>
     <view class='title'>服务商可以在币风平台执行众包任务</view>
-  </view>
+  </button>
 </view>
 
 <!-- 选择服务商 -->
