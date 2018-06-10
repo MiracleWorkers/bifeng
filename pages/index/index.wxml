@@ -21,7 +21,7 @@
   <view class="taskList">
     <view class="taskContent" wx:for="{{taskList}}" wx:key="title">
       <view class="icon">
-        <text class='iconfont {{item.iconName}}'></text>
+        <image mode='widthFix' src='{{item.iconName}}' />
       </view>
       <text class="text">{{item.title}}</text>
     </view>
@@ -29,7 +29,7 @@
 
   <!-- 通知模块 -->
   <view class='notification-box' bindtap='_blankTaskDetails'>
-    <image class='avater' src="../../assets/img/aver.jpeg"></image>
+    <image mode='widthFix' class='avater' src="../../assets/img/aver.jpeg"></image>
     <view class='notification-text'>
       <view class='noti-info'>
         <text>李某某</text>
@@ -43,11 +43,17 @@
   <view class='task-contest'>
     <view class='state'>
       <view class='state-left'>
-        <text class='title'>抢任务</text>
+        <view class='title'>
+          <image mode='widthFix' src='../../assets/img/fire.png' />
+          <text>抢任务</text>
+        </view>
         <text class="smallTitle">所有任务中，单位工作量下酬劳最高的任务</text>
       </view>
       <view class='state-right'>
-        34小时36分23秒
+        <view class='time'>
+          <text>倒计时</text>
+          <text>34:36:26</text>
+        </view>
       </view>
     </view>
   </view>
@@ -56,6 +62,7 @@
   <!-- 专题 -->
   <view class='topics'>
     <view class='title'>
+      <image mode='widthFix' src='../../assets/img/index-tag.png' />
       <text>专题</text>
     </view>
     <view class='contentBox'>
@@ -66,7 +73,7 @@
         data-item="{{item}}"
         bindtap="_blankTopics">
         <view class='icon'>
-          <text class='iconfont {{item.iconName}}'></text>
+          <image mode='widthFix' src='{{item.iconName}}' />
         </view>
         <text class='text'>{{item.title}}</text>
       </view>
@@ -76,6 +83,7 @@
   <!-- 精品任务  -->
   <view class="taskBest">
     <view class='top'>
+      <image mode='widthFix' src='../../assets/img/index-best.png' />
       <text>精品任务</text>
     </view>
     <include src="../../templates/bestTask/index.wxml" />

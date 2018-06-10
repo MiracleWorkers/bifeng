@@ -19,37 +19,37 @@ Page({
     taskList: [
       {
         title: "转发任务",
-        iconName: "bf-zhuanfa",
+        iconName: "../../assets/img/index-taskList-1.png",
         path: "/index"
       }, {
         title: "注册任务",
-        iconName: "bf-zhuce",
+        iconName: "../../assets/img/index-taskList-2.png",
         path: "/index"
       }, {
         title: "评论任务",
-        iconName: "bf-pinglun",
+        iconName: "../../assets/img/index-taskList-3.png",
         path: "/index"
       }, {
         title: "涨粉任务",
-        iconName: "bf-fensi",
+        iconName: "../../assets/img/index-taskList-4.png",
         path: "/index"
       }
     ],
     topicsList: [{
       title: "优质专选",
-      iconName: "bf-youzhigongyingshang",
+      iconName: "../../assets/img/index-tag-1.png",
       path: "../topics/topics?module=A"
     }, {
       title: "趣味专题",
-      iconName: "bf-quwei",
+      iconName: "../../assets/img/index-tag-2.png",
       path: "../topics/topics?module=B"
     }, {
       title: "酬劳丰厚",
-      iconName: "bf-qian",
+      iconName: "../../assets/img/index-tag-3.png",
       path: "../topics/topics?module=C"
     }, {
       title: "机会多多",
-      iconName: "bf-jihui01",
+      iconName: "../../assets/img/index-tag-4.png",
       path: "../topics/topics?module=D"
     }]
   },

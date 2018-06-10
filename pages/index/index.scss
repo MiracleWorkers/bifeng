@@ -12,7 +12,7 @@
   justify-content: space-around;
   align-content: center;
   width: 750rpx;
-  height: 160rpx;
+  height: 168rpx;
   background-color: #fff;
   .taskContent {
     display: flex;
@@ -21,32 +21,24 @@
     align-items: center;
     width: 33.333%;
     height: 100%;
-    &:active{
-      background-color: $borderColor;
+    &:active {
+      background-color: $activeColor;
     }
     .icon {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 90rpx;
-      height: 90rpx;
+      width: 50rpx;
+      height: 50rpx;
       border-radius: 50%;
-      .iconfont{
-        display: block;
-        font-size: 56rpx;
-        color: $themeColor;
-      }
-      .bf-zhuanfa{
-        font-size: 48rpx;
-      }
     }
     .text {
       display: block;
       width: 100%;
-      margin-top: 10rpx;
-      font-size: 28rpx;
+      margin-top: 20rpx;
+      font-size: 26rpx;
       text-align: center;
-      color: $titleColor;
+      color: #404750;
     }
   }
 }
@@ -56,32 +48,40 @@
   display: flex;
   align-items: center;
   width: 750rpx;
-  height: 120rpx;
+  height: 128rpx;
   margin-top: 20rpx;
   background: #fff;
   .avater {
-    width: 90rpx;
-    height: 90rpx;
-    margin-left: 30rpx;
+    width: 88rpx;
+    height: 88rpx;
+    border-radius: 50%;
+    margin-left: 20rpx;
     border: 1rpx solid $borderColor;
     box-sizing: border-box;
   }
   .notification-text {
-    width: 560rpx;
-    margin-left: 40rpx;
+    width: 580rpx;
+    margin-left: 30rpx;
     .noti-info {
       width: 100%;
-      font-size: 26rpx;
+      font-size: 24rpx;
+      line-height: 1em;
+      color: #26262c;
     }
     .noti-title {
       width: 100%;
-      margin-top: 10rpx;
+      margin-top: 18rpx;
       font-size: 30rpx;
       @extend .singleLine;
+      line-height: 1em;
+      color: #fd8753;
+      background: linear-gradient(to right, #ff5c92, #fd8753);
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
-  &:active{
-    background-color: #f1f1f1;
+  &:active {
+    background-color: $activeColor;
   }
 }
 
@@ -89,35 +89,85 @@
 .task-contest {
   width: 750rpx;
   height: auto;
-  margin-top: 30rpx;
+  margin-top: 20rpx;
   background: #fff;
   .state {
+    position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
-    padding: 14rpx 0;
-    border-bottom: 1rpx solid $borderColor;
+    height: 108rpx;
+    &:after{
+      position: absolute;
+      left: 20rpx;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 710rpx;
+      height: 2rpx;
+      background-color: #dae2ec;
+    }
     .state-left {
       width: 65%;
       padding-left: 30rpx;
       .title {
-        display: block;
-        font-size: $titleSize;
+        display: flex;
+        align-items: center;
+        font-size: 30rpx;
+        color: $titleColor;
         font-weight: 600;
+        image{
+          width: 24rpx;
+          margin-right: 15rpx;
+        }
       }
       .smallTitle {
         display: block;
-        margin-top: 6rpx;
-        font-size: $infoSize;
-        color: #bfbfbf;
+        margin-top: 17rpx;
+        font-size: 20rpx;
+        color: #8b9093;
+        line-height: 1em;
       }
     }
     .state-right {
+      display: flex;
+      justify-content: flex-end;
       width: 35%;
-      text-align: right;
+      height: 100%;
       padding-right: 30rpx;
-      font-size: $subTitleSize;
-      color: #515151;
+      font-size: 20rpx;
+      .time{
+        display: flex;
+        align-items: center;
+        width: 210rpx;
+        height: 30rpx;
+        margin-top: 28rpx;
+        overflow: hidden;
+        text:nth-child(1){
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 90rpx;
+          height: 30rpx;
+          background-color: #f44242;
+          color: #fff;
+          border-radius: 15rpx 0 0 15rpx;
+        }
+        text:nth-child(2){
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 120rpx;
+          height: 30rpx;
+          border: 1rpx solid #f44242;
+          border-left: 0;
+          color: #f44242;
+          font-size: 24rpx;
+          border-radius: 0 15rpx 15rpx 0;
+          line-height: 1em;
+          box-sizing: border-box;
+        }
+      }
     }
   }
 }
@@ -129,14 +179,30 @@
   margin-top: 30rpx;
   background: #fff;
   .title {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 80rpx;
     line-height: 80rpx;
-    border-bottom: 1rpx solid $borderColor;
-    font-size: 34rpx;
-    font-weight: 600;
-    text {
+    &:after{
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 30rpx;
+      content: "";
+      width: 690rpx;
+      height: 2rpx;
+      background-color: #dae2ec;
+    }
+    image{
+      width: 28rpx;
       margin-left: 30rpx;
+    }
+    text{
+      margin-left: 10rpx;
+      font-size: 30rpx;
+      color: $titleColor;
     }
   }
   .contentBox {
@@ -146,42 +212,85 @@
     height: auto;
     padding: 20rpx 0;
     margin: 0 auto;
-    .module{
+    .module {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 50%;
-      height: 220rpx;
+      height: 174rpx;
       box-sizing: border-box;
-      border-bottom: 1rpx solid $borderColor;
-      &:nth-last-child(1),
-      &:nth-last-child(2){
-        border-bottom: 0;
-      }
-      &:nth-child(2n){
-        border-left: 1rpx solid $borderColor;
-      }
-      &:active{
+      &:active {
         background-color: #f5f5f5;
       }
-      .icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 140rpx;
-        height: 140rpx;
-        .iconfont{
+      .text {
+        display: block;
+        margin-top: 20rpx;
+        font-size: 28rpx;
+        color: #686888;
+      }
+      &:nth-child(1){
+        position: relative;
+        &:before{
+          position: absolute;
+          content: "";
           display: block;
-          font-size: 76rpx;
-          color: $themeColor;
+          width: 1rpx;
+          height: 88rpx;
+          top: 43rpx;
+          right: 0;
+          background-color: #dae2ec;
+        }
+        &:after{
+          position: absolute;
+          content: "";
+          display: block;
+          width: 208rpx;
+          height: 2rpx;
+          bottom: 0;
+          left: 68rpx;
+          background-color: #dae2ec;
+        }
+        image{
+          width: 68rpx;
         }
       }
-      .text{
-        display: block;
-        margin-top: 10rpx;
-        font-size: 28rpx;
-        color: $subTitleColor;
+      &:nth-child(2){
+        position: relative;
+        &:after{
+          position: absolute;
+          content: "";
+          display: block;
+          width: 208rpx;
+          height: 2rpx;
+          bottom: 0;
+          left: 68rpx;
+          background-color: #dae2ec;
+        }
+        image{
+          width: 64rpx;
+        }
+      }
+      &:nth-child(3){
+        position: relative;
+        &:before{
+          position: absolute;
+          content: "";
+          display: block;
+          width: 1rpx;
+          height: 88rpx;
+          top: 43rpx;
+          right: 0;
+          background-color: #dae2ec;
+        }
+        image{
+          width: 60rpx;
+        }
+      }
+      &:nth-child(4){
+        image{
+          width: 76rpx;
+        }
       }
     }
   }
@@ -194,14 +303,30 @@
   height: auto;
   background-color: #fff;
   .top {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 80rpx;
     line-height: 80rpx;
-    border-bottom: 1rpx solid $borderColor;
-    font-size: $titleSize;
-    font-weight: 600;
-    text {
+    &:after{
+      position: absolute;
+      content: "";
+      display: block;
+      width: 690rpx;
+      height: 2rpx;
+      left: 30rpx;
+      bottom: 0;
+      background-color: #dae2ec;
+    }
+    image{
+      width: 28rpx;
       margin-left: 30rpx;
+    }
+    text{
+      margin-left: 10rpx;
+      color: $titleColor;
+      font-size: 30rpx;
     }
   }
   @import "../../templates/bestTask/style.scss";

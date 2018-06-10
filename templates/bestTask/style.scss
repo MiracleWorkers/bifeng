@@ -3,9 +3,8 @@
 .task-model {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 750rpx;
-  padding: 20rpx 0;
+  width: 690rpx;
+  padding: 30rpx;
   color: $titleColor;
   background-color: #fff;
   border-bottom: 1rpx solid $borderColor;
@@ -13,65 +12,75 @@
     border-bottom: 0;
   }
   &:active{
-    background: #f5f5f5;
+    background: $activeColor;
   }
   image {
     display: block;
-    width: 120rpx;
-    height: 120rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 6rpx;
     border: 1rpx solid $borderColor;
     box-sizing: border-box;
   }
   .model-info {
     width: 570rpx;
+    margin-left: 20rpx;
     .info-title {
       width: 100%;
-      font-size: $subTitleSize;
+      font-size: 24rpx;
+      line-height: 1em;
       @extend .singleLine;
       .mark {
         display: inline-block;
-        padding: 2rpx 8rpx;
+        width: 50rpx;
+        height: 24rpx;
+        line-height: 24rpx;
         box-sizing: border-box;
-        border: 1rpx solid $borderColor;
-        vertical-align: bottom;
-        margin-left: 8rpx;
-        font-size: 22rpx;
+        vertical-align: text-bottom;
+        font-size: 20rpx;
+        color: #fff;
+        text-align: center;
+        background-color: #ed3a11;
       }
       .best{
-        border: 1rpx solid $themeColor;
-        color: $themeColor;
+        background-color: #ff6600;
+        margin-left: 14rpx;
       }
     }
     .tags {
       display: flex;
       align-items: center;
       width: 570rpx;
-      margin-top: 10rpx;
-      font-size: $infoSize;
+      margin-top: 16rpx;
+      font-size: 20rpx;
       .left {
         width: 50%;
         @extend .singleLine;
         text {
           display: inline-block;
-          padding: 0 6rpx;
-          height: 32rpx;
-          line-height: 32rpx;
-          background: #f5f5f5;
-          margin-left: 8rpx;
+          height: 28rpx;
+          line-height: 28rpx;
+          padding: 0 20rpx;
+          border-radius: 28rpx;
+          color: $themeColor;
+          border: 1rpx solid $themeColor;
+          margin-right: 10rpx;
+          box-sizing: border-box;
         }
       }
       .right {
         width: 50%;
         text-align: right;
-        font-size: 19rpx;
+        font-size: 20rpx;
+        color: #26262c;
       }
     }
     .sort {
       display: flex;
       align-items: center;
       width: 570rpx;
-      margin-top: 10rpx;
-      font-size: 22rpx;
+      margin-top: 12rpx;
+      font-size: 20rpx;
       .left {
         width: 50%;
         padding-left: 8rpx;

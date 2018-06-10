@@ -8,25 +8,24 @@
   align-items: center;
   justify-content: center;
   width: 750rpx;
-  height: 200rpx;
-  background: #fff;
+  height: 84rpx;
   font-size: 24rpx;
-  color: #515151; }
+  color: #8b9093; }
   .bottomLineModel::before {
     content: "";
     display: inline-block;
-    width: 200rpx;
+    width: 250rpx;
     height: 2rpx;
-    margin-right: 8rpx;
-    background: #e6e6e6;
+    margin-right: 20rpx;
+    background: #8b9093;
     vertical-align: middle; }
   .bottomLineModel::after {
     content: "";
     display: inline-block;
-    width: 200rpx;
+    width: 250rpx;
     height: 2rpx;
-    margin-left: 8rpx;
-    background: #e6e6e6;
+    margin-left: 20rpx;
+    background: #8b9093;
     vertical-align: middle; }
 
 @font-face {
@@ -112,7 +111,7 @@
     width: 100%;
     height: 80rpx;
     font-size: 34rpx;
-    color: #2c2c2c;
+    color: #26262c;
     border-bottom: 1rpx solid #e6e6e6; }
     .container .typeSelectBox .model:active {
       background-color: #e6e6e6; }

@@ -8,25 +8,24 @@
   align-items: center;
   justify-content: center;
   width: 750rpx;
-  height: 200rpx;
-  background: #fff;
+  height: 84rpx;
   font-size: 24rpx;
-  color: #515151; }
+  color: #8b9093; }
   .bottomLineModel::before, .showContentBox .bottomLine::before {
     content: "";
     display: inline-block;
-    width: 200rpx;
+    width: 250rpx;
     height: 2rpx;
-    margin-right: 8rpx;
-    background: #e6e6e6;
+    margin-right: 20rpx;
+    background: #8b9093;
     vertical-align: middle; }
   .bottomLineModel::after, .showContentBox .bottomLine::after {
     content: "";
     display: inline-block;
-    width: 200rpx;
+    width: 250rpx;
     height: 2rpx;
-    margin-left: 8rpx;
-    background: #e6e6e6;
+    margin-left: 20rpx;
+    background: #8b9093;
     vertical-align: middle; }
 
 @font-face {
@@ -230,32 +229,32 @@
     align-items: center;
     justify-content: center;
     width: 750rpx;
-    height: 200rpx;
-    background: #fff;
+    height: 84rpx;
     font-size: 24rpx;
-    color: #515151; }
+    color: #8b9093; }
     .showContentBox .bottomLineModel::before, .showContentBox .bottomLine::before {
       content: "";
       display: inline-block;
-      width: 200rpx;
+      width: 250rpx;
       height: 2rpx;
-      margin-right: 8rpx;
-      background: #e6e6e6;
+      margin-right: 20rpx;
+      background: #8b9093;
       vertical-align: middle; }
     .showContentBox .bottomLineModel::after, .showContentBox .bottomLine::after {
       content: "";
       display: inline-block;
-      width: 200rpx;
+      width: 250rpx;
       height: 2rpx;
-      margin-left: 8rpx;
-      background: #e6e6e6;
+      margin-left: 20rpx;
+      background: #8b9093;
       vertical-align: middle; }
   .showContentBox .task-show-model {
     height: auto;
     margin-bottom: 20rpx;
+    padding-bottom: 10rpx;
     background: #fff; }
     .showContentBox .task-show-model:active {
-      background-color: #eeeeee; }
+      background-color: #ecf0f5; }
     .showContentBox .task-show-model .task-top {
       display: flex;
       align-items: center;
@@ -271,36 +270,37 @@
         padding-left: 30rpx;
         font-size: 28rpx; }
         .showContentBox .task-show-model .task-top .left image {
-          width: 80rpx;
-          height: 80rpx;
+          width: 48rpx;
+          height: 48rpx;
           border-radius: 50%;
           border: 1rpx solid #e6e6e6;
           box-sizing: border-box; }
         .showContentBox .task-show-model .task-top .left .user-name {
-          color: #2c2c2c;
+          color: #26262c;
           font-size: 28rpx;
-          margin-left: 20rpx; }
+          margin-left: 12rpx; }
       .showContentBox .task-show-model .task-top .right {
         width: 50%;
         padding-right: 30rpx;
         text-align: right;
-        font-size: 22rpx; }
+        font-size: 20rpx; }
     .showContentBox .task-show-model .thumb {
       position: relative;
       width: 690rpx;
-      margin: 6rpx auto 0;
+      margin: 4rpx auto 0;
       overflow: hidden; }
       .showContentBox .task-show-model .thumb image {
         display: block;
-        width: 100%; }
+        width: 100%;
+        max-height: 240rpx; }
       .showContentBox .task-show-model .thumb .thumb-title {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 60rpx;
-        line-height: 60rpx;
-        font-size: 28rpx;
+        height: 40rpx;
+        line-height: 40rpx;
+        font-size: 24rpx;
         color: #fff;
         background-color: rgba(0, 0, 0, 0.6);
         overflow: hidden;
@@ -310,53 +310,51 @@
           margin-left: 20rpx; }
       .showContentBox .task-show-model .thumb .toTop {
         position: absolute;
-        top: 9rpx;
-        left: -34rpx;
+        top: 6rpx;
+        left: -40rpx;
         width: 120rpx;
-        height: 40rpx;
-        line-height: 40rpx;
-        font-size: 22rpx;
+        height: 30rpx;
+        line-height: 30rpx;
+        font-size: 20rpx;
         text-align: center;
         background: #f7f7f7;
-        transform: rotate(-45deg);
-        border-top: 1px solid e6e6e6;
-        border-bottom: 1px solid #e6e6e6; }
+        transform: rotate(-45deg); }
       .showContentBox .task-show-model .thumb .best {
         position: absolute;
-        top: 42rpx;
-        left: -50rpx;
+        top: 30rpx;
+        left: -64rpx;
         width: 220rpx;
-        height: 40rpx;
-        line-height: 40rpx;
-        font-size: 22rpx;
+        height: 30rpx;
+        line-height: 30rpx;
+        font-size: 20rpx;
         text-align: center;
         background: #f7f7f7;
         color: #e27b10;
-        transform: rotate(-45deg);
-        border-top: 1px solid e6e6e6;
-        border-bottom: 1px solid #e6e6e6; }
+        transform: rotate(-45deg); }
     .showContentBox .task-show-model .task-tags {
       display: flex;
       align-items: center;
       width: 100%;
-      height: 70rpx;
-      font-size: 24rpx; }
+      height: 58rpx;
+      font-size: 20rpx; }
       .showContentBox .task-show-model .task-tags .tags {
         display: flex;
-        width: 60%;
+        width: 55%;
         padding-left: 30rpx; }
         .showContentBox .task-show-model .task-tags .tags .tag {
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 3rpx 10rpx;
-          background: #f5f5f5;
-          margin-left: 6rpx; }
+          padding: 5rpx 20rpx;
+          margin-right: 10rpx;
+          color: #e27b10;
+          border: 1rpx solid #e27b10;
+          border-radius: 30rpx; }
       .showContentBox .task-show-model .task-tags .kind {
-        width: 40%;
+        width: 45%;
+        font-size: 20rpx;
         text-align: right;
+        color: #26262c;
         padding-right: 30rpx; }
-        .showContentBox .task-show-model .task-tags .kind text {
-          font-weight: 600; }
   .showContentBox .bottomLine {
     background: transparent; }
